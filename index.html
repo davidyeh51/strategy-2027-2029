@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230C3A63'/%3E%3Cpath d='M12 48h10V28H12zm15 0h10V18H27zm15 0h10V8H42z' fill='%231BB1BF'/%3E%3Ccircle cx='47' cy='13' r='4' fill='%23E09A2B'/%3E%3C/svg%3E">
-<title>2027–2029 策略調整：五角色提問、David 策略對照、數據查核｜進能服 6692</title>
-<meta name="description" content="進能服 6692 內部策略研討決策平台：涵蓋經濟部 GES 2026 數據查核、五大角色 25 題攻防、雙向利潤擠壓模型、David 四原則與兩軸定位對照、三大調整方向與今日高階授權事項。">
+<title>2027–2029 策略調整：政府光電政策、一地兩用實戰、核心決策問題攻防與 David 策略對照｜進能服 6692</title>
+<meta name="description" content="進能服 6692 內部策略研討決策平台：深度解析政府二次能源轉型光電政策、一地兩用（農漁電共生）實戰典範、25 大核心決策問題分類攻防、David 四原則與兩軸定位對照、三大調整方向與今日授權事項。">
 <style>
 :root{
   --blue:#1968AD; --blue-d:#12518A; --blue-dd:#0C3A63; --blue-soft:#E8F1F9;
@@ -38,34 +38,34 @@ body{
 .topnav{display:flex; gap:4px; flex:1; min-width:0; overflow-x:auto; scrollbar-width:none}
 .topnav::-webkit-scrollbar{display:none}
 .topnav a{
-  text-decoration:none; color:var(--muted); font-size:.84rem; font-weight:600;
-  padding:6px 13px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
+  text-decoration:none; color:var(--muted); font-size:.82rem; font-weight:600;
+  padding:6px 11px; border-radius:4px; white-space:nowrap; border:1px solid transparent;
   transition:all .15s ease;
 }
 .topnav a:hover{color:var(--blue); background:var(--blue-soft)}
 .topnav a.active{color:#fff; background:var(--blue); font-weight:700}
 .topbar .meta{font-size:.74rem; color:var(--muted); white-space:nowrap; font-weight:600}
-@media(max-width:1150px){.topbar .meta{display:none}}
+@media(max-width:1200px){.topbar .meta{display:none}}
 @media(max-width:860px){.topbar .brand .tx{font-size:.78rem}}
 
 /* ---------- views / slides ---------- */
 .view{display:none}
 .view.active{display:block}
 .slide{
-  display:none; min-height:100vh; padding:78px 48px 88px;
-  max-width:1380px; margin:0 auto; flex-direction:column;
+  display:none; min-height:100vh; padding:76px 44px 88px;
+  max-width:1400px; margin:0 auto; flex-direction:column;
 }
 .slide.active{display:flex}
-.slide-header{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:18px}
-.eyebrow{font-size:.76rem; font-weight:800; letter-spacing:.14em; color:var(--teal-d); text-transform:uppercase; margin-bottom:6px}
-.slide-header h1,.slide-header h2{font-size:clamp(1.35rem,2.5vw,1.9rem); line-height:1.3; font-weight:800; max-width:34em; color:var(--ink)}
+.slide-header{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:16px}
+.eyebrow{font-size:.76rem; font-weight:800; letter-spacing:.14em; color:var(--teal-d); text-transform:uppercase; margin-bottom:5px}
+.slide-header h1,.slide-header h2{font-size:clamp(1.28rem,2.3vw,1.82rem); line-height:1.3; font-weight:800; max-width:35em; color:var(--ink)}
 .slide-header h1::after,.slide-header h2::after{
-  content:""; display:block; width:64px; height:4px; margin-top:10px;
+  content:""; display:block; width:64px; height:4px; margin-top:8px;
   background:linear-gradient(90deg,var(--blue),var(--teal));
 }
-.slide-header .sub{margin-top:10px; color:var(--muted); font-size:.92rem; max-width:60em; line-height:1.58}
+.slide-header .sub{margin-top:8px; color:var(--muted); font-size:.9rem; max-width:62em; line-height:1.55}
 .flags{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
-.flag{font-size:.72rem; font-weight:700; padding:5px 12px; border-radius:3px; white-space:nowrap}
+.flag{font-size:.72rem; font-weight:700; padding:4px 10px; border-radius:3px; white-space:nowrap}
 .flag.blue{background:var(--blue-soft); color:var(--blue-d)}
 .flag.teal{background:var(--teal-soft); color:var(--teal-d)}
 .flag.amber{background:var(--amber-soft); color:#9a6a10}
@@ -74,18 +74,18 @@ body{
 .flag.purple{background:var(--purple-soft); color:var(--purple)}
 .flag.grey{background:var(--grey-soft); color:var(--muted)}
 .slide-body{flex:1; display:flex; flex-direction:column; gap:16px}
-.slide-foot{display:flex; justify-content:space-between; gap:16px; margin-top:20px; padding-top:12px; border-top:1px solid var(--line); font-size:.73rem; color:var(--muted); background:rgba(255,255,255,.7); border-radius:3px; padding-left:10px; padding-right:10px}
+.slide-foot{display:flex; justify-content:space-between; gap:16px; margin-top:18px; padding-top:10px; border-top:1px solid var(--line); font-size:.73rem; color:var(--muted); background:rgba(255,255,255,.7); border-radius:3px; padding-left:10px; padding-right:10px}
 .slide-foot .pageno{white-space:nowrap; font-weight:800; color:var(--blue)}
 
 /* ---------- layout grids ---------- */
-.two-col{display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:stretch}
+.two-col{display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:stretch}
 .three-col{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
 .four-col{display:grid; grid-template-columns:repeat(4,1fr); gap:12px}
 .five-col{display:grid; grid-template-columns:repeat(5,1fr); gap:10px}
-.split-45{display:grid; grid-template-columns:45% 1fr; gap:18px; align-items:start}
-.split-55{display:grid; grid-template-columns:1fr 45%; gap:18px; align-items:start}
-.split-img-right{display:grid; grid-template-columns:1.05fr 1fr; gap:18px; align-items:start}
-.split-img-left{display:grid; grid-template-columns:1fr 1.05fr; gap:18px; align-items:start}
+.split-45{display:grid; grid-template-columns:45% 1fr; gap:16px; align-items:start}
+.split-55{display:grid; grid-template-columns:1fr 45%; gap:16px; align-items:start}
+.split-img-right{display:grid; grid-template-columns:1.08fr 1fr; gap:16px; align-items:start}
+.split-img-left{display:grid; grid-template-columns:1fr 1.08fr; gap:16px; align-items:start}
 
 @media(max-width:1050px){
   .slide{padding:72px 18px 96px}
@@ -93,19 +93,19 @@ body{
 }
 
 /* ---------- components ---------- */
-.card{background:var(--card); border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:4px; padding:16px 18px; box-shadow:0 3px 10px rgba(18,41,61,.04)}
+.card{background:var(--card); border:1px solid var(--line); border-top:3px solid var(--blue); border-radius:4px; padding:15px 17px; box-shadow:0 3px 10px rgba(18,41,61,.04)}
 .card.teal{border-top-color:var(--teal)}
 .card.amber{border-top-color:var(--amber)}
 .card.coral{border-top-color:var(--coral)}
 .card.green{border-top-color:var(--green)}
 .card.purple{border-top-color:var(--purple)}
 .card.grey{border-top-color:var(--grey)}
-.card h3{font-size:.98rem; font-weight:800; margin-bottom:8px; color:var(--ink)}
-.card p{font-size:.87rem; color:var(--muted); line-height:1.55}
+.card h3{font-size:.95rem; font-weight:800; margin-bottom:6px; color:var(--ink)}
+.card p{font-size:.86rem; color:var(--muted); line-height:1.52}
 
-.metric{border-radius:4px; padding:14px 16px; border:1px solid var(--line); background:#fff; border-left:5px solid var(--blue); box-shadow:0 2px 8px rgba(18,41,61,.03)}
-.metric .k{font-size:clamp(1.35rem,2.3vw,1.9rem); font-weight:900; line-height:1.1; color:var(--blue); font-variant-numeric:tabular-nums}
-.metric .t{font-size:.8rem; color:var(--muted); margin-top:6px; line-height:1.45}
+.metric{border-radius:4px; padding:13px 15px; border:1px solid var(--line); background:#fff; border-left:5px solid var(--blue); box-shadow:0 2px 8px rgba(18,41,61,.03)}
+.metric .k{font-size:clamp(1.3rem,2.2vw,1.8rem); font-weight:900; line-height:1.1; color:var(--blue); font-variant-numeric:tabular-nums}
+.metric .t{font-size:.78rem; color:var(--muted); margin-top:5px; line-height:1.42}
 .metric.teal{border-left-color:var(--teal)} .metric.teal .k{color:var(--teal-d)}
 .metric.amber{border-left-color:var(--amber)} .metric.amber .k{color:#9a6a10}
 .metric.coral{border-left-color:var(--coral)} .metric.coral .k{color:#b4432c}
@@ -115,17 +115,17 @@ body{
 
 .big-callout{
   background:linear-gradient(120deg,var(--blue-dd),var(--blue) 62%,var(--teal-d)); color:#fff;
-  border-radius:4px; padding:18px 22px; position:relative; overflow:hidden;
+  border-radius:4px; padding:16px 20px; position:relative; overflow:hidden;
 }
-.big-callout .label{font-size:.72rem; letter-spacing:.14em; opacity:.85; font-weight:800; margin-bottom:6px}
-.big-callout .answer{font-size:clamp(1.05rem,2.1vw,1.45rem); font-weight:800; line-height:1.38}
-.big-callout .more{margin-top:8px; font-size:.88rem; opacity:.92; line-height:1.55}
+.big-callout .label{font-size:.72rem; letter-spacing:.14em; opacity:.85; font-weight:800; margin-bottom:5px}
+.big-callout .answer{font-size:clamp(1.02rem,2vw,1.4rem); font-weight:800; line-height:1.36}
+.big-callout .more{margin-top:7px; font-size:.86rem; opacity:.92; line-height:1.52}
 
 .table-wrap{background:#fff; border:1px solid var(--line); border-radius:4px; overflow-x:auto; box-shadow:0 4px 14px rgba(7,29,59,.05)}
-table{width:100%; border-collapse:collapse; font-size:.85rem; min-width:580px}
-th{background:var(--blue); color:#fff; text-align:left; font-weight:700; padding:9px 12px; white-space:nowrap; font-size:.82rem}
+table{width:100%; border-collapse:collapse; font-size:.84rem; min-width:560px}
+th{background:var(--blue); color:#fff; text-align:left; font-weight:700; padding:8px 11px; white-space:nowrap; font-size:.81rem}
 th.sub{background:var(--blue-d)}
-td{padding:8px 12px; border-bottom:1px solid #EDF1F5; vertical-align:top}
+td{padding:8px 11px; border-bottom:1px solid #EDF1F5; vertical-align:top}
 tr:last-child td{border-bottom:none}
 tbody tr:nth-child(even){background:#FAFCFE}
 tbody tr:hover{background:#F0F6FC}
@@ -136,12 +136,12 @@ td.ctr,th.ctr{text-align:center}
 .bad-row{background:var(--coral-soft) !important}
 .good-row{background:var(--green-soft) !important}
 
-.table-toggle{display:block; width:100%; padding:9px 12px; border:0; border-top:1px solid var(--line); background:var(--blue-soft); color:var(--blue-dd); text-align:left; font:700 .78rem inherit; cursor:pointer}
+.table-toggle{display:block; width:100%; padding:8px 11px; border:0; border-top:1px solid var(--line); background:var(--blue-soft); color:var(--blue-dd); text-align:left; font:700 .78rem inherit; cursor:pointer}
 .table-toggle:hover{background:#d8e6f5}
 .table-extra{display:none}
 .table-wrap.expanded .table-extra{display:table-row}
 
-.chip{display:inline-block; font-size:.7rem; font-weight:700; padding:2px 8px; border-radius:3px; white-space:nowrap}
+.chip{display:inline-block; font-size:.7rem; font-weight:700; padding:2px 7px; border-radius:3px; white-space:nowrap}
 .chip.blue{background:var(--blue-soft); color:var(--blue-d)}
 .chip.teal{background:var(--teal-soft); color:var(--teal-d)}
 .chip.amber{background:var(--amber-soft); color:#9a6a10}
@@ -150,13 +150,13 @@ td.ctr,th.ctr{text-align:center}
 .chip.purple{background:var(--purple-soft); color:var(--purple)}
 .chip.grey{background:var(--grey-soft); color:var(--muted)}
 
-.note{background:var(--amber-soft); border-left:4px solid var(--amber); padding:10px 14px; font-size:.86rem; border-radius:0 3px 3px 0}
-.warn{background:var(--coral-soft); border-left:4px solid var(--coral); padding:10px 14px; font-size:.86rem; border-radius:0 3px 3px 0}
-.tip{background:var(--green-soft); border-left:4px solid var(--green); padding:10px 14px; font-size:.86rem; border-radius:0 3px 3px 0}
+.note{background:var(--amber-soft); border-left:4px solid var(--amber); padding:10px 14px; font-size:.85rem; border-radius:0 3px 3px 0}
+.warn{background:var(--coral-soft); border-left:4px solid var(--coral); padding:10px 14px; font-size:.85rem; border-radius:0 3px 3px 0}
+.tip{background:var(--green-soft); border-left:4px solid var(--green); padding:10px 14px; font-size:.85rem; border-radius:0 3px 3px 0}
 
-.fig{background:#fff; border:1px solid var(--line); border-radius:4px; padding:12px 14px; box-shadow:0 3px 12px rgba(18,41,61,.04)}
-.fig .cap{font-size:.76rem; color:var(--muted); margin-top:8px; text-align:center}
-.fig .figtitle{font-size:.86rem; font-weight:800; margin-bottom:8px; color:var(--blue-dd)}
+.fig{background:#fff; border:1px solid var(--line); border-radius:4px; padding:10px 12px; box-shadow:0 3px 12px rgba(18,41,61,.04)}
+.fig .cap{font-size:.75rem; color:var(--muted); margin-top:7px; text-align:center}
+.fig .figtitle{font-size:.85rem; font-weight:800; margin-bottom:7px; color:var(--blue-dd)}
 .fig img{display:block; width:100%; height:auto; border-radius:3px; object-fit:contain; background:#0b1d30}
 .fig.pure-img{padding:0; overflow:hidden; background:#08192b}
 .fig.pure-img img{width:100%; height:100%; object-fit:contain; border-radius:0}
@@ -170,45 +170,45 @@ svg text{font-family:inherit}
 .hero{
   position:relative; overflow:hidden; color:#fff;
   background:linear-gradient(115deg,var(--blue-dd) 0%,var(--blue) 55%,#1580A8 100%);
-  padding:96px 48px 52px;
+  padding:94px 44px 50px;
 }
-.hero .inner{max-width:1380px; margin:0 auto; position:relative; z-index:2}
-.hero .kicker{font-size:.8rem; font-weight:800; letter-spacing:.16em; color:#8FD9E4}
-.hero h1{font-size:clamp(1.75rem,4vw,2.8rem); font-weight:900; line-height:1.24; margin-top:12px; max-width:24em}
-.hero .lede{margin-top:14px; max-width:52em; font-size:.98rem; opacity:.93; line-height:1.68}
-.hero .herometa{margin-top:20px; display:flex; gap:8px; flex-wrap:wrap}
-.hero .herometa span{font-size:.74rem; font-weight:700; background:rgba(255,255,255,.16); padding:5px 12px; border-radius:3px}
+.hero .inner{max-width:1400px; margin:0 auto; position:relative; z-index:2}
+.hero .kicker{font-size:.78rem; font-weight:800; letter-spacing:.16em; color:#8FD9E4}
+.hero h1{font-size:clamp(1.7rem,3.8vw,2.7rem); font-weight:900; line-height:1.24; margin-top:10px; max-width:26em}
+.hero .lede{margin-top:12px; max-width:54em; font-size:.96rem; opacity:.93; line-height:1.65}
+.hero .herometa{margin-top:18px; display:flex; gap:8px; flex-wrap:wrap}
+.hero .herometa span{font-size:.73rem; font-weight:700; background:rgba(255,255,255,.16); padding:4px 11px; border-radius:3px}
 .hero .deco{position:absolute; right:-60px; top:-40px; width:840px; opacity:.35; pointer-events:none; z-index:1}
 @media(max-width:1000px){.hero{padding:80px 18px 40px} .hero .deco{width:560px; right:-140px; opacity:.25}}
-.homebody{max-width:1380px; margin:0 auto; padding:30px 48px 56px}
-@media(max-width:1000px){.homebody{padding:24px 18px 46px}}
+.homebody{max-width:1400px; margin:0 auto; padding:28px 44px 54px}
+@media(max-width:1000px){.homebody{padding:22px 18px 44px}}
 
-.part-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:18px}
+.part-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px}
 .part-card{
   display:block; text-decoration:none; color:var(--ink); background:#fff;
-  border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:4px; padding:22px;
+  border:1px solid var(--line); border-top:4px solid var(--blue); border-radius:4px; padding:20px;
   transition:transform .15s ease, box-shadow .15s ease; position:relative; overflow:hidden;
 }
 .part-card:hover{transform:translateY(-4px); box-shadow:0 12px 28px rgba(18,41,61,.12)}
-.part-card.c2{border-top-color:var(--teal)} .part-card.c3{border-top-color:var(--amber)} .part-card.c4{border-top-color:var(--purple)}
-.part-card .pc-eyebrow{font-size:.72rem; font-weight:800; letter-spacing:.14em; color:var(--blue)}
-.part-card.c2 .pc-eyebrow{color:var(--teal-d)} .part-card.c3 .pc-eyebrow{color:#9a6a10} .part-card.c4 .pc-eyebrow{color:var(--purple)}
-.part-card h2{font-size:1.22rem; font-weight:800; margin:8px 0 6px; line-height:1.35}
-.part-card p{color:var(--muted); font-size:.87rem; line-height:1.58}
-.part-card .pc-flags{margin-top:12px; display:flex; gap:6px; flex-wrap:wrap}
-.part-card .pc-go{margin-top:14px; font-weight:800; color:var(--blue); font-size:.85rem}
-.part-card .pc-icon{position:absolute; right:14px; top:14px; opacity:.85}
+.part-card.c2{border-top-color:var(--teal)} .part-card.c3{border-top-color:var(--amber)} .part-card.c4{border-top-color:var(--purple)} .part-card.c5{border-top-color:var(--green)}
+.part-card .pc-eyebrow{font-size:.71rem; font-weight:800; letter-spacing:.14em; color:var(--blue)}
+.part-card.c2 .pc-eyebrow{color:var(--teal-d)} .part-card.c3 .pc-eyebrow{color:#9a6a10} .part-card.c4 .pc-eyebrow{color:var(--purple)} .part-card.c5 .pc-eyebrow{color:var(--green)}
+.part-card h2{font-size:1.15rem; font-weight:800; margin:7px 0 5px; line-height:1.35}
+.part-card p{color:var(--muted); font-size:.85rem; line-height:1.55}
+.part-card .pc-flags{margin-top:11px; display:flex; gap:5px; flex-wrap:wrap}
+.part-card .pc-go{margin-top:13px; font-weight:800; color:var(--blue); font-size:.84rem}
+.part-card .pc-icon{position:absolute; right:12px; top:12px; opacity:.85}
 
-.quick-spec-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-top:24px}
-.home-foot{padding-top:20px; font-size:.74rem; color:var(--muted); border-top:1px solid var(--line); margin-top:30px; line-height:1.8}
+.quick-spec-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:11px; margin-top:22px}
+.home-foot{padding-top:18px; font-size:.73rem; color:var(--muted); border-top:1px solid var(--line); margin-top:28px; line-height:1.8}
 
 /* ---------- bottom controls ---------- */
 .deckbar{position:fixed; left:0; right:0; bottom:0; z-index:50; pointer-events:none; display:none}
 .progress{height:4px; background:#DFE7EE}
 .progress .fill{height:100%; width:0%; background:linear-gradient(90deg,var(--blue),var(--teal)); transition:width .25s ease}
-.hint{position:absolute; left:20px; bottom:14px; font-size:.74rem; color:var(--muted); background:rgba(255,255,255,.94); padding:4px 10px; border-radius:3px; border:1px solid var(--line)}
+.hint{position:absolute; left:20px; bottom:14px; font-size:.73rem; color:var(--muted); background:rgba(255,255,255,.94); padding:4px 10px; border-radius:3px; border:1px solid var(--line)}
 .ctrl{position:absolute; right:16px; bottom:12px; display:flex; align-items:center; gap:8px; pointer-events:auto}
-.ctrl .counter{font-size:.78rem; color:var(--muted); background:rgba(255,255,255,.94); border:1px solid var(--line); padding:5px 12px; border-radius:3px; font-variant-numeric:tabular-nums}
+.ctrl .counter{font-size:.76rem; color:var(--muted); background:rgba(255,255,255,.94); border:1px solid var(--line); padding:5px 12px; border-radius:3px; font-variant-numeric:tabular-nums}
 .ctrl button{
   width:32px; height:32px; border:1px solid var(--line); background:rgba(255,255,255,.94);
   border-radius:3px; cursor:pointer; font-size:1.1rem; color:var(--ink); font-weight:800;
@@ -233,12 +233,13 @@ svg text{font-family:inherit}
   </a>
   <nav class="topnav">
     <a href="#home" data-nav="home">封面</a>
-    <a href="#p0" data-nav="p0">Part 0 數據查核 (3 頁)</a>
-    <a href="#p1" data-nav="p1">Part 1 五角色提問 (5 頁)</a>
-    <a href="#p2" data-nav="p2">Part 2 策略架構對照 (3 頁)</a>
-    <a href="#p3" data-nav="p3">Part 3 調整方向與授權 (2 頁)</a>
+    <a href="#p1" data-nav="p1">Part 1 政府光電政策 (4 頁)</a>
+    <a href="#p2" data-nav="p2">Part 2 一地兩用實戰 (4 頁)</a>
+    <a href="#p3" data-nav="p3">Part 3 決策問題攻防 (5 頁)</a>
+    <a href="#p4" data-nav="p4">Part 4 David 策略對照 (3 頁)</a>
+    <a href="#p5" data-nav="p5">Part 5 調整方向與授權 (2 頁)</a>
   </nav>
-  <div class="meta">基準：2026/09/08 ｜ 來源：GES Taiwan 2026 ｜ 呈閱：David、經營層</div>
+  <div class="meta">基準：2026/09 ｜ 來源：今周刊論壇、能源署供需報告 ｜ 呈閱：David、經營層</div>
 </div>
 
 <!-- ================= HOME VIEW ================= -->
@@ -262,58 +263,67 @@ svg text{font-family:inherit}
       </g>
     </svg>
     <div class="inner">
-      <div class="kicker">進能服 6692 · 2.2 事業經營 × 1.2 五年計畫</div>
-      <h1>2027–2029 策略調整：五角色提問、David 策略對照、數據查核</h1>
+      <div class="kicker">進能服 6692 · 1.0 策略層級 × 2.2 事業經營</div>
+      <h1>2027–2029 策略調整：政府政策全景、一地兩用實戰與核心決策攻防</h1>
       <p class="lede">
-        本決策中樞完整收錄 2026-09-08 跨區協調月會核心攻防：以經濟部 GES Taiwan 2026 現場簡報數據為基準，逐筆審查 12 筆市場容量與成本走勢；由董事長、總經理、獨立董事、顧問、事業部主管五大角色提出 25 題攻防立場；對照 David 四原則與縱橫兩軸架構，破解「躉購費率凍結 × 成本海嘯」雙向擠壓，拍板今日高階三大授權事項。
+        整合《政府能源政策跟進能服的策略討論》、今周刊新能源論壇《能源轉型最後一哩路：如何跨越綠能的社會接受度？》及經濟部《能源轉型策略與進展多元、安全與韌性》三份核心簡報。特別獨立呈現「政府對光電政策全景」與「一地兩用實戰典範」，並取消角色分法，直接以資本、營運、場域、供應鏈與終局思維五大決策問題分類，全面對照 David 四原則與兩軸定位，拍板今日高階三大授權事項。
       </p>
       <div class="herometa">
-        <span>經濟部 GES 2026 現場投影片查核</span>
-        <span>12 筆數據真偽與風險查核</span>
-        <span>五大角色 25 題攻防與代價分析</span>
-        <span>費率凍結 × 成本海嘯雙向擠壓</span>
-        <span>雙軌戰略 (屋頂優先 / 地面複合)</span>
-        <span>David 四原則與脈絡複利</span>
-        <span>高階決策儀表板三大授權</span>
+        <span>Part 1 政府光電政策全景</span>
+        <span>Part 2 一地兩用（農漁電共生）</span>
+        <span>Part 3 決策問題分類攻防</span>
+        <span>Part 4 David 四原則與脈絡複利</span>
+        <span>Part 5 三大調整方向與今日授權</span>
+        <span>志光 85MW / 大亞 240MW 實證</span>
+        <span>0403 地震 510MW 秒級儲能救網</span>
       </div>
     </div>
   </div>
 
   <div class="homebody">
     <div class="part-cards">
-      <a class="part-card" href="#p0-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><rect x="1" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".2"/><rect x="17" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="1" y="17" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="17" y="17" width="12" height="12" rx="2" fill="#1968AD"/></svg>
-        <div class="pc-eyebrow">PART 0</div>
-        <h2>數據查核總表與三大風險</h2>
-        <p>經濟部 GES 現場投影片解密！逐筆審核 12 筆政策裝置量與投資規模，揭示三大風險警訊與「躉購費率凍結 × 成本上漲」雙向毛利夾殺真相。</p>
-        <div class="pc-flags"><span class="chip blue">3 頁</span><span class="chip teal">現場投影片證實</span><span class="chip coral">雙向擠壓模型</span></div>
-        <div class="pc-go">進入數據查核 &rarr;</div>
+      <a class="part-card" href="#p1-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><rect x="1" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".2"/><rect x="17" y="1" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="1" y="17" width="12" height="12" rx="2" fill="#1968AD" opacity=".45"/><rect x="17" y="17" width="12" height="12" rx="2" fill="#1968AD"/></svg>
+        <div class="pc-eyebrow">PART 1 · 核心專章 (1)</div>
+        <h2>政府對光電的政策</h2>
+        <p>二次能源轉型方針、2030 目標 31.2GW 缺口（年需 3.3GW）、屋頂新制縮水、AI 暴增×土地環評×電網儲能三重夾擊與 AIDC 共址引導。（4 頁）</p>
+        <div class="pc-flags"><span class="chip blue">4 頁</span><span class="chip teal">屋頂新制</span><span class="chip coral">三重夾擊</span></div>
+        <div class="pc-go">進入政府政策 &rarr;</div>
       </a>
 
-      <a class="part-card c2" href="#p1-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><path d="M4 26 L4 17 L10 17 L10 26 M12 26 L12 11 L18 11 L18 26 M20 26 L20 4 L26 4 L26 26" stroke="#1BB1BF" stroke-width="2.4" fill="none"/></svg>
-        <div class="pc-eyebrow">PART 1</div>
-        <h2>五角色提問與決策立場 (25 題)</h2>
-        <p>董事長、總經理、獨董、顧問、事業部主管 25 道靈魂拷問。提供 A1/A2/A3 三大立場與不可迴避之代價，為策略會預先建立壓力測試攻防矩陣。</p>
-        <div class="pc-flags"><span class="chip teal">5 頁</span><span class="chip blue">五角色矩陣</span><span class="chip amber">A1/A2/A3 代價</span></div>
-        <div class="pc-go">進入五角色提問 &rarr;</div>
+      <a class="part-card c2" href="#p2-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M4 26 L4 17 L10 17 L10 26 M12 26 L12 11 L18 11 L18 26 M20 26 L20 4 L26 4 L26 26" stroke="#1BB1BF" stroke-width="2.4" fill="none"/></svg>
+        <div class="pc-eyebrow">PART 2 · 核心專章 (2)</div>
+        <h2>一地兩用實戰與社會接受度</h2>
+        <p>跨越最後一哩路：破除 NIMBY 鄰避抗爭、志光 85MW / 大亞 240MW 典範、40% 遮蔽率微氣象站、養殖日誌查核與 0403 地震 510MW 儲能救網。（4 頁）</p>
+        <div class="pc-flags"><span class="chip teal">4 頁</span><span class="chip green">養殖為本</span><span class="chip amber">大亞 240M</span></div>
+        <div class="pc-go">進入一地兩用 &rarr;</div>
       </a>
 
-      <a class="part-card c3" href="#p2-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><path d="M15 3l6 6-6 6-6-6z" fill="#E09A2B" opacity=".5"/><path d="M15 15l6 6-6 6-6-6z" fill="#E09A2B"/></svg>
-        <div class="pc-eyebrow">PART 2</div>
+      <a class="part-card c3" href="#p3-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><circle cx="15" cy="15" r="11" stroke="#E09A2B" stroke-width="2.4" fill="none"/><path d="M15 8v7l5 3" stroke="#E09A2B" stroke-width="2.4"/></svg>
+        <div class="pc-eyebrow">PART 3 · 問題分類攻防</div>
+        <h2>五大決策問題分類攻防 (25 題)</h2>
+        <p>取消角色劃分！直接按資本配置、營運與標準化、一地兩用治理、供應鏈與跨區、市場終局思維五大決策維度，全面盤點 A1/A2/A3 立場與代價。（5 頁）</p>
+        <div class="pc-flags"><span class="chip amber">5 頁</span><span class="chip coral">問題分類</span><span class="chip blue">代價矩陣</span></div>
+        <div class="pc-go">進入決策問題 &rarr;</div>
+      </a>
+
+      <a class="part-card c4" href="#p4-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><path d="M15 3l6 6-6 6-6-6z" fill="#6B46C1" opacity=".5"/><path d="M15 15l6 6-6 6-6-6z" fill="#6B46C1"/></svg>
+        <div class="pc-eyebrow">PART 4 · 策略架構對照</div>
         <h2>David 策略對照與脈絡複利</h2>
-        <p>以 David 四原則（少而精、規劃後執行、脈絡複利、決策在人）與縱橫兩軸定位檢視：簡報漏了 6 場域經濟、7 產品方案、4.6 運維管理三大盲區。</p>
-        <div class="pc-flags"><span class="chip amber">3 頁</span><span class="chip coral">決策權外包矛盾</span><span class="chip green">複利飛輪</span></div>
+        <p>David 四原則嚴審簡報「決策權外包矛盾」；兩軸定位揭示跳過「6 場域經濟」與「7 產品方案」，缺席「4.6 運維管理」；五大行動線以運維數據飛輪實現最高複利。（3 頁）</p>
+        <div class="pc-flags"><span class="chip purple">3 頁</span><span class="chip coral">決策外包矛盾</span><span class="chip green">複利飛輪</span></div>
         <div class="pc-go">進入策略架構對照 &rarr;</div>
       </a>
 
-      <a class="part-card c4" href="#p3-1">
-        <svg class="pc-icon" width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="15" r="11" stroke="#6B46C1" stroke-width="2.4" fill="none"/><path d="M15 8v7l5 3" stroke="#6B46C1" stroke-width="2.4"/></svg>
-        <div class="pc-eyebrow">PART 3</div>
+      <a class="part-card c5" href="#p5-1">
+        <svg class="pc-icon" width="28" height="28" viewBox="0 0 30 30"><rect x="3" y="3" width="24" height="24" rx="4" stroke="#2E7D32" stroke-width="2.4" fill="none"/><path d="M9 15l4 4 8-8" stroke="#2E7D32" stroke-width="2.4" fill="none"/></svg>
+        <div class="pc-eyebrow">PART 5 · 調整方向與授權</div>
         <h2>策略調整方向與今日授權</h2>
-        <p>三大策略調整方向 A/B/C 比較（補中間層 vs 單軌極致 vs 收回成敗錨點），以及高階決策儀表板拍板之「三大授權事項」與查核依據。</p>
-        <div class="pc-flags"><span class="chip purple">2 頁</span><span class="chip coral">三大今日授權</span><span class="chip blue">官方查核出處</span></div>
+        <p>三大可選調整方向 A/B/C 全景比較（補中間層 vs 單軌極致 vs 收回成敗錨點），以及高階決策儀表板拍板之「三大今日授權事項」與查核文獻。（2 頁）</p>
+        <div class="pc-flags"><span class="chip green">2 頁</span><span class="chip coral">三大授權事項</span><span class="chip blue">官方文獻</span></div>
         <div class="pc-go">進入調整方向與授權 &rarr;</div>
       </a>
     </div>
@@ -321,28 +331,28 @@ svg text{font-family:inherit}
     <!-- Quick Spec Grid -->
     <div class="quick-spec-grid">
       <div class="metric blue">
-        <div class="k">5.4384 兆</div>
-        <div class="t">2026–2035 能源總投資規模（GES 現場投影片證實，含台電與民間）</div>
+        <div class="k">16.0 GW</div>
+        <div class="t">2026/6 光電累計裝置量（屋頂型 10.05GW 佔 64%）</div>
       </div>
       <div class="metric teal">
-        <div class="k">18.8 GW</div>
-        <div class="t">太陽光電 10 年新增規劃（方針：屋頂優先 Rooftop First、地面複合）</div>
+        <div class="k">31.2 GW</div>
+        <div class="t">2030 光電目標（尚缺 15.36GW，未來 5 年年均需增 3.3GW）</div>
       </div>
       <div class="metric amber">
-        <div class="k">14.6 GW</div>
-        <div class="t">離岸風電 10 年新增（官方區間 13.4–15.0 GW；2026 已達 4.9 GW / 510 座風機）</div>
-      </div>
-      <div class="metric purple">
-        <div class="k">26 GW</div>
-        <div class="t">燃氣機組新增裝置容量（2024 年新增容量全球第 3）</div>
+        <div class="k">40% 遮蔽率</div>
+        <div class="t">一地兩用實戰黃金準則：養殖為本，數據微氣象站智能監測</div>
       </div>
       <div class="metric coral">
-        <div class="k">費率凍結</div>
-        <div class="t">115 年度躉購費率未調升，與成本上漲形成雙向利潤夾殺</div>
+        <div class="k">三重夾擊</div>
+        <div class="t">AI算力暴增(+2.5%) × 光電三法9大紅線 × 電網併網排隊7年</div>
+      </div>
+      <div class="metric purple">
+        <div class="k">510 MW</div>
+        <div class="t">0403 花蓮地震儲能 1 秒釋出救網（頻率 59.45Hz 防止全台大停電）</div>
       </div>
       <div class="metric green">
-        <div class="k">+60% vs +10%</div>
-        <div class="t">外部變壓器價格指數近 2 年漲約 60%，內部 +10% 預估恐顯著低估</div>
+        <div class="k">三大授權</div>
+        <div class="t">今日拍板：通路分潤機制、前期停損點MOU、保量鎖價框架協議</div>
       </div>
     </div>
 
@@ -351,371 +361,725 @@ svg text{font-family:inherit}
     </div>
   </div>
 </div>
-
-<!-- ================= PART 0: 數據查核總表 ================= -->
-<div class="view" id="view-p0">
-
-  <!-- P0.1 -->
-  <section class="slide">
-    <div class="slide-header">
-      <div>
-        <div class="eyebrow">Part 0 · 數據查核 0.1</div>
-        <h1>經濟部 GES Taiwan 2026 數據查核總表（12 筆逐項審查）</h1>
-        <p class="sub">查核基準：經濟部／能源署公開新聞稿、114 年度電力供需報告與 SEMI GES 官網。以現場側拍證券與官方文件對齊，分為查證相符、部分相符與未公開三級。</p>
-      </div>
-      <div class="flags">
-        <span class="flag teal">✅ 查證相符 (5)</span>
-        <span class="flag amber">⚠️ 需校準 (3)</span>
-        <span class="flag coral">❓ 現場投影片 (4)</span>
-      </div>
-    </div>
-    <div class="slide-body">
-      <div class="split-img-right">
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th class="ctr">#</th>
-                <th>簡報陳述之關鍵指標</th>
-                <th class="ctr">查核結果</th>
-                <th>事實依據與查核說明</th>
-                <th class="ctr">決策影響</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="good-row">
-                <td class="ctr"><b>1</b></td>
-                <td><b>經濟部 2026/9/1 於 GES Taiwan 2026 報告</b>（SEMI 主辦、邀請制）</td>
-                <td class="ctr"><span class="chip green">✅ 相符</span></td>
-                <td>SEMI 官網證實：TaiNEX 下午場 13:30–19:00，標註 "By Invitation Only and Non-transferable"。</td>
-                <td class="ctr"><span class="chip grey">低</span></td>
-              </tr>
-              <tr class="good-row">
-                <td class="ctr"><b>2</b></td>
-                <td><b>天然氣 2026–2035 新增 26 GW</b></td>
-                <td class="ctr"><span class="chip green">✅ 相符</span></td>
-                <td>經濟部 2026/6/18《114年度全國電力資源供需報告》明載燃氣機組累計新增量約 26 GW。</td>
-                <td class="ctr"><span class="chip blue">中</span></td>
-              </tr>
-              <tr class="good-row">
-                <td class="ctr"><b>3</b></td>
-                <td><b>離岸風電 2026 累計裝置容量 4.9 GW</b></td>
-                <td class="ctr"><span class="chip green">✅ 相符</span></td>
-                <td>經濟部 2026/7/10 離岸風電中長程藍圖：截至 115/7/10 約 4.9 GW、8 座風場完工。</td>
-                <td class="ctr"><span class="chip blue">中</span></td>
-              </tr>
-              <tr class="hl-row">
-                <td class="ctr"><b>4</b></td>
-                <td><b>共 510 座風機</b></td>
-                <td class="ctr"><span class="chip amber">⚠️ 修正</span></td>
-                <td>官方用語為「逾 500 座」（2026/6/15 完成第 500 座）。510 精確數字官方未載，建議改寫為「逾 500 座」。</td>
-                <td class="ctr"><span class="chip grey">低</span></td>
-              </tr>
-              <tr class="good-row">
-                <td class="ctr"><b>5</b></td>
-                <td><b>2025 年離岸風電新增容量全球第 3</b></td>
-                <td class="ctr"><span class="chip green">✅ 相符</span></td>
-                <td>經濟部新聞稿：累計容量全球第 5、2025 單年新增全球第 3。注意累計與新增兩指標不可混用。</td>
-                <td class="ctr"><span class="chip grey">低</span></td>
-              </tr>
-              <tr class="hl-row">
-                <td class="ctr"><b>6</b></td>
-                <td><b>離岸風電 2026–2035 新增 14.6 GW</b></td>
-                <td class="ctr"><span class="chip amber">⚠️ 區間</span></td>
-                <td>官方公布為「2035 年累計 18.3–19.9 GW」，回推新增為 13.4–15.0 GW；14.6 落在區間內但非官方唯一定值。</td>
-                <td class="ctr"><span class="chip amber">中</span></td>
-              </tr>
-              <tr class="good-row">
-                <td class="ctr"><b>7</b></td>
-                <td><b>太陽光電 2016–2026 累計容量成長約 13 倍</b></td>
-                <td class="ctr"><span class="chip green">✅ 推算相符</span></td>
-                <td>2016 年 1.245 GW；2024 年 14.28 GW；2026/6 估約 16 GW，16/1.245 ≈ 12.9 倍。</td>
-                <td class="ctr"><span class="chip blue">中</span></td>
-              </tr>
-              <tr class="bad-row">
-                <td class="ctr"><b>8</b></td>
-                <td><b>太陽光電 2026–2035 新增 18.8 GW</b></td>
-                <td class="ctr"><span class="chip coral">❓ 現場專屬</span></td>
-                <td>未在公開新聞稿查得，但右方 GES 現場側拍照確認為經濟部現場簡報投影片第 4 頁正本數字！</td>
-                <td class="ctr"><span class="chip coral">高</span></td>
-              </tr>
-              <tr class="bad-row">
-                <td class="ctr"><b>9</b></td>
-                <td><b>其他再生能源新增 1.59 GW</b>（地熱、小水力）</td>
-                <td class="ctr"><span class="chip coral">❓ 現場專屬</span></td>
-                <td>同上，出自 GES 現場簡報柱狀圖最下方標註之 1.59 GW。</td>
-                <td class="ctr"><span class="chip grey">低</span></td>
-              </tr>
-              <tr class="bad-row">
-                <td class="ctr"><b>10</b></td>
-                <td><b>2026–2035 總投資 5.4384 兆新台幣</b>（含台電與民間）</td>
-                <td class="ctr"><span class="chip coral">❓ 現場證實</span></td>
-                <td>各家媒體未載，但現場投影片標題即為："Supply Security (2026-2035 investment: NT$5.4384 trillion*)"！</td>
-                <td class="ctr"><span class="chip coral">極高</span></td>
-              </tr>
-              <tr class="bad-row">
-                <td class="ctr"><b>11</b></td>
-                <td><b>天然氣「2024 年新增容量全球排名第 3」</b></td>
-                <td class="ctr"><span class="chip coral">❓ 現場投影片</span></td>
-                <td>GEM/IEA 資料庫統計，經濟部現場投影片右側文案明確列入。</td>
-                <td class="ctr"><span class="chip grey">低</span></td>
-              </tr>
-              <tr class="hl-row">
-                <td class="ctr"><b>12</b></td>
-                <td><b>線材 +15%、變壓器 +10%、鋼構 +10%（預估至 2027）</b></td>
-                <td class="ctr"><span class="chip amber">⚠️ 顯著低估</span></td>
-                <td>公司內部預估。外部券商報告指出變壓器價格指數 2 年大漲 60%，內部 +10% 嚴重低估！</td>
-                <td class="ctr"><span class="chip coral">關鍵</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="fig">
-          <div class="figtitle">現場投影片證券：經濟部 GES Taiwan 2026 簡報正本</div>
-          <img src="assets/slide_2_img_1.png" alt="GES Taiwan 2026 經濟部報告現場投影片照片">
-          <div class="cap">▲ 證實：5.4384 兆投資、18.8 GW 光電、14.6 GW 風電確為經濟部現場發表數據</div>
-        </div>
-      </div>
-      <div class="three-col" style="margin-top:6px">
-        <div class="card teal">
-          <h3>📸 現場投影片解密疑慮</h3>
-          <p>第 10 筆（5.4384 兆）與第 8 筆（18.8 GW）雖未見於公開新聞稿，但側拍照證實其為經濟部現場發表正本，對外引用應加註「GES 現場簡報」。</p>
-        </div>
-        <div class="card amber">
-          <h3>📐 定值 vs 區間精確度</h3>
-          <p>風電 14.6 GW 為官方區間（13.4–15.0 GW）之中值。內部評估可用定值，但對外或投資人簡報宜維持區間表達，避免被法規與選商挑戰。</p>
-        </div>
-        <div class="card coral">
-          <h3>🚨 成本預估是唯一生死線</h3>
-          <p>前 11 筆是市場大餅，第 12 筆成本預估才是決定 2027–2029 損益的根本。若變壓器實漲 60% 卻只估 10%，毛利防衛將全盤潰敗。</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide-foot">
-      <div>來源：經濟部能源署、114 年度供需報告、GES Taiwan 2026 現場簡報</div>
-      <div class="pageno">0.1</div>
-    </div>
-  </section>
-
-  <!-- P0.2 -->
-  <section class="slide">
-    <div class="slide-header">
-      <div>
-        <div class="eyebrow">Part 0 · 數據查核 0.2</div>
-        <h1>查核衍生的三大核心風險與內部物料走勢校準</h1>
-        <p class="sub">精準到小數點後四位的數據具備高度權威外觀，但在策略決策中若未經校準，將引發外部公信力危機與內部毛利潰堤風險。</p>
-      </div>
-      <div class="flags">
-        <span class="flag coral">風險一：外部引用</span>
-        <span class="flag amber">風險二：區間失真</span>
-        <span class="flag coral">風險三：成本海嘯低估</span>
-      </div>
-    </div>
-    <div class="slide-body">
-      <div class="split-img-left">
-        <div class="fig">
-          <div class="figtitle">內部物料成本價格漲幅展望表（簡報第 5 頁原件）</div>
-          <img src="assets/slide_5_img_3.png" alt="內部物料價格漲幅矩陣">
-          <div class="cap">▲ 內部基準：2026/Q1 為 1.0，預估 2027 線材 1.15、變壓器 1.10、鋼構 1.10</div>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>衍生風險面向</th>
-                <th>簡報原始呈現</th>
-                <th>查核真實情境</th>
-                <th>對 2027–2029 經營衝擊</th>
-                <th>建議處置對策</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="hl-row">
-                <td><b>風險一：5.4384 兆對外引用</b></td>
-                <td>直接作為外部官方預算引用</td>
-                <td>官方新聞稿皆未載，屬邀請制閉門高峰會投影片</td>
-                <td>若對法人或金融機構引述，恐因查無公開發布而喪失專業公信力</td>
-                <td><span class="chip amber">加註閉門來源</span> 或改引述公開供需報告之各項裝置容量</td>
-              </tr>
-              <tr>
-                <td><b>風險二：14.6 GW 定值化</b></td>
-                <td>寫為 2026–2035 新增 14.6 GW</td>
-                <td>官方刻意用 13.4–15.0 GW 區間（3-3 期選商節奏未定）</td>
-                <td>若政策選商延後，以定值推估之資本與人力擴編將淪為閒置固定成本</td>
-                <td><span class="chip blue">改用區間規劃</span>，組織編制採彈性外包因應</td>
-              </tr>
-              <tr class="bad-row">
-                <td><b>風險三：成本海嘯顯著低估</b></td>
-                <td>變壓器 +10%、鋼構 +10%、線材 +15%</td>
-                <td>外部券商報告顯示變壓器價格指數近 2 年漲約 60%，交期長達 18~24 個月</td>
-                <td><b>最大實質衝擊</b>：毛利預期被嚴重高估，接單越多虧損越大</td>
-                <td><span class="chip coral">重啟三情境壓力測試</span>，採購長約與保量鎖價立即啟動</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="two-col" style="margin-top:4px">
-        <div class="card coral">
-          <h3>⚡ 變壓器 +10% 致命落差解析</h3>
-          <p>全球 AI 資料中心爆發與台電強韌電網計畫同時搶購特高壓與配電級變壓器。外部國際銅價與矽鋼片走揚，交期已排至 2027 年後。簡報設定的 +10% 僅是常態通膨，未能反映結構性缺料暴漲，必須立即依實務牌價重新修正專案 BOM。</p>
-        </div>
-        <div class="card amber">
-          <h3>🛡️ 內部預估標註規範</h3>
-          <p>內部文件第 5 頁下方雖標註「2027年漲幅為預測，還是得視戰爭/銅/石油的漲幅而定」，但此但書並未納入專案報價公式。高階決策會議應強制要求所有業務報價植入物價指數連動機制。</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide-foot">
-      <div>來源：簡報原圖對照、豐雲學堂券商報告、經濟部能源署離岸風電藍圖</div>
-      <div class="pageno">0.2</div>
-    </div>
-  </section>
-
-  <!-- P0.3 -->
-  <section class="slide">
-    <div class="slide-header">
-      <div>
-        <div class="eyebrow">Part 0 · 數據查核 0.3</div>
-        <h1>簡報漏掉的最關鍵事實：費率凍結 × 成本海嘯的「雙向擠壓」</h1>
-        <p class="sub">簡報將「成本海嘯」視為單邊問題，但真正的經營真相是：收入端被政策天花板鎖死，支出端被全球供應鏈墊高，兩者形成不可逆的利潤夾殺。</p>
-      </div>
-      <div class="flags">
-        <span class="flag coral">雙向擠壓模型</span>
-        <span class="flag blue">115 年度躉購費率公告</span>
-        <span class="flag amber">破局關鍵在商模</span>
-      </div>
-    </div>
-    <div class="slide-body">
-      <div class="split-img-right">
-        <!-- SVG Margin Squeeze Diagram -->
-        <div class="fig">
-          <div class="figtitle">雙向擠壓模型：天花板凍結 × 地板上浮的毛利消失機制</div>
-          <svg viewBox="0 0 540 290" role="img" aria-label="雙向擠壓示意圖">
-            <!-- Ceiling (Feed-in Tariff) -->
-            <rect x="30" y="25" width="480" height="42" rx="5" fill="#12293D"/>
-            <text x="270" y="46" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">政策天花板：115 年度太陽光電躉購費率「凍結不調升」</text>
-            <text x="270" y="61" fill="#8FD9E4" font-size="10.5" text-anchor="middle">（收入端被鎖死：屋頂型約 3.8~5.8 元/度，地面型約 3.7~4.1 元/度）</text>
-
-            <!-- Downward Pressure Arrow -->
-            <path d="M270 73 L270 95 M265 90 L270 98 L275 90" stroke="#D95F45" stroke-width="2.5" fill="none"/>
-            <text x="320" y="90" fill="#D95F45" font-size="11" font-weight="700">收入端零彈性 ⬇</text>
-
-            <!-- Squeezed Margin Zone -->
-            <rect x="50" y="105" width="440" height="65" rx="4" fill="#FCF2DE" stroke="#E09A2B" stroke-width="2" stroke-dasharray="4,4"/>
-            <text x="270" y="132" fill="#9a6a10" font-size="14" font-weight="900" text-anchor="middle">⚠️ 被夾殺的 EPC 專案毛利空間 (Margin Erosion)</text>
-            <text x="270" y="152" fill="#5B7285" font-size="11" text-anchor="middle">光靠採購與施工防禦，數學上絕對無法填補缺口！</text>
-
-            <!-- Upward Inflation Pressure -->
-            <path d="M270 205 L270 182 M265 187 L270 179 L275 187" stroke="#D95F45" stroke-width="2.5" fill="none"/>
-            <text x="320" y="198" fill="#D95F45" font-size="11" font-weight="700">成本端暴衝 ⬆</text>
-
-            <!-- Floor (Cost Inflation) -->
-            <rect x="30" y="212" width="480" height="52" rx="5" fill="#D95F45"/>
-            <text x="270" y="233" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">成本地板墊高：變壓器 (+60%) ＋ 線材 (+15%) ＋ 鋼構 (+10%)</text>
-            <text x="270" y="251" fill="#FBEAE5" font-size="10.5" text-anchor="middle">（加上缺工工資年漲 8~12%、升壓站特高壓設備長交期加價）</text>
-          </svg>
-          <div class="cap">▲ 政策費率無調整空間，原料與設備全面墊高，純 EPC 毛利率加速收斂</div>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>擠壓維度</th>
-                <th>市場現狀與政策現實</th>
-                <th>簡報原始認知</th>
-                <th>真實經營後果</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="hl-row">
-                <td><b>收入端 (費率)</b></td>
-                <td>經濟部公告 115 年度躉購費率持平，未來 3 年維持微降或平盤</td>
-                <td>未提及費率，預設營收與 IRR 不受政策定價壓制</td>
-                <td>業主投資報酬率被壓扁，要求 EPC 統包商降價吸收，議價難度倍增</td>
-              </tr>
-              <tr class="bad-row">
-                <td><b>成本端 (原料)</b></td>
-                <td>銅價盤整偏多、變壓器結構性缺貨、鋼構工資居高不下</td>
-                <td>僅視為單向成本波動，認為靠採購集中與工法標準化即可修復</td>
-                <td>內部 +10% 預估嚴重背離現實，防禦後目標毛利淪為試算表上的紙上談兵</td>
-              </tr>
-              <tr class="good-row">
-                <td><b>唯一突圍線</b></td>
-                <td><b>必須開闢第三條線：產品組合升級與商業模式轉型</b></td>
-                <td>純粹在採購端與工程端打防禦戰</td>
-                <td>由單次 EPC 轉向維運長約（4.6）與場域整合服務（6），建立複利護城河</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="three-col" style="margin-top:6px">
-        <div class="card">
-          <h3>1. 數學上的不可能性</h3>
-          <p>若原料設備綜合漲幅達 18%，在費率不動前提下，專案毛利率將直接蒸發 6~8 個百分點。集中採購與設計優化至多省下 2~3%，數學上利潤必遭稀釋。</p>
-        </div>
-        <div class="card teal">
-          <h3>2. 業主端心態轉向</h3>
-          <p>因為躉購費率沒漲，企業業主自發自用或售電之財務模型變得極度敏感。業主對 EPC 報價更加挑剔，要求更長保固與更嚴格履約保證。</p>
-        </div>
-        <div class="card green">
-          <h3>3. 商業模式躍遷契機</h3>
-          <p>純工程承包商在雙向擠壓下最脆弱。必須往「售電分成」、「儲能整合」與「20 年高妥善率維運長約」移動，才能擺脫一次性微利困局。</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide-foot">
-      <div>來源：經濟部 115 年度躉購費率公告、能源政策跟進策略討論簡報</div>
-      <div class="pageno">0.3</div>
-    </div>
-  </section>
-
-</div>
-
-<!-- ================= PART 1: 五角色提問 ================= -->
+<!-- ================= PART 1: 政府對光電的政策 ================= -->
 <div class="view" id="view-p1">
 
   <!-- P1.1 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 1 · 五角色提問 1.1</div>
-        <h1>一、董事長視角：資本配置、風險胃納與定位抉擇（Q1–Q5）</h1>
-        <p class="sub">董事長的提問核心在於資本運用效率與公司長期估值乘數：究竟是要做穩定周轉的工程周轉商，還是承擔長期資產風險的能源營運商？</p>
+        <div class="eyebrow">Part 1 · 政府光電政策 1.1</div>
+        <h1>我國二次能源轉型總方針與 2030 光電目標缺口</h1>
+        <p class="sub">政策定調「屋頂優先（Rooftop First）、地面以複合利用為原則（Dual-Use）」。截至 2026 年中累計裝置量約 16 GW，距離 2030 年 31.2 GW 目標仍有逾 15 GW 缺口，單靠屋頂型絕對無法達標！</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">二次能源轉型</span>
+        <span class="flag teal">2030 目標 31.2 GW</span>
+        <span class="flag coral">年增 3.3 GW 缺口壓力</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>能源轉型推動階段</th>
+                <th>累計裝置容量</th>
+                <th>官方核心推動方針與機制</th>
+                <th class="ctr">達成進度</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>2016 啟動基期</b></td>
+                <td class="num">1.25 GW</td>
+                <td>啟動太陽光電二年推動計畫，以躉購費率 (FIT) 高誘因帶動民間投資</td>
+                <td class="ctr"><span class="chip grey">起步</span></td>
+              </tr>
+              <tr>
+                <td><b>2024 穩健成長</b></td>
+                <td class="num">14.28 GW</td>
+                <td>屋頂型工業廠房放量，地面型逐步受限於土地與生態爭議</td>
+                <td class="ctr"><span class="chip blue">已達 46%</span></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>2026/06 政策實績 (現狀)</b></td>
+                <td class="num"><b>約 16.0 GW</b></td>
+                <td><b>總量成長約 13 倍。</b> 屋頂型累計 10.05 GW 佔 64%；區塊開發 R3.3 啟動，深度節電 132.4 億度</td>
+                <td class="ctr"><span class="chip amber">達標 51%</span></td>
+              </tr>
+              <tr class="bad-row">
+                <td><b>2030 國家法定目標</b></td>
+                <td class="num"><b>31.2 GW</b></td>
+                <td><b>距離目標仍差約 15.2~15.36 GW！</b> 未來不到 5 年平均每年需新增 <b>3.3 GW</b>（2023 併網僅 2.5 GW）</td>
+                <td class="ctr"><span class="chip coral">極大缺口</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>2026–2035 十年新增規劃</b></td>
+                <td class="num"><b>+18.8 GW</b></td>
+                <td>經濟部 GES 2026 現場簡報公布：光電 18.8 GW、風電 14.6 GW、燃氣 26 GW，總投資 5.4384 兆元</td>
+                <td class="ctr"><span class="chip green">規劃定案</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fig">
+          <div class="figtitle">經濟部簡報原件：我國二次能源轉型現況及成果</div>
+          <img src="assets/pdf2_page_4.png" alt="二次能源轉型現況及成果">
+          <div class="cap">▲ 官方成果：光電 16GW、離岸風電 4.86GW、深度節電 132.4億度、科技儲能與智慧電表 443.7萬戶</div>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card blue">
+          <h3>📌 單靠屋頂型絕對無法達標</h3>
+          <p>截至 2026 年初，屋頂型雖累積達 10.05 GW（佔 64%），但全台大坪數優質工業屋頂已多數開發。每年 3.3 GW 的龐大增量，必須依賴「地面型複合利用」補足。</p>
+        </div>
+        <div class="card teal">
+          <h3>⚡ 政策推進雙主軸確立</h3>
+          <p>中央政策方針已明確宣示：「屋頂優先，地面以複合利用為原則」。這意味著一般單純變更農地的地面型將全面凍結，一地兩用（農漁電共生）成為地面唯一通道。</p>
+        </div>
+        <div class="card amber">
+          <h3>🎯 汰舊換新 (Repowering) 機制</h3>
+          <p>早期 2016 年前後設置之案場轉換率僅 16~18%，能源署正式啟動汰舊換新機制，以次世代 N 型高功率模組提升單位坪數發電量，是進能服在手維運案場的新商機。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：經濟部《能源轉型策略與進展多元、安全與韌性》(2026/08/24) ｜ 今周刊新能源論壇</div>
+      <div class="pageno">1.1</div>
+    </div>
+  </section>
+
+  <!-- P1.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 政府光電政策 1.2</div>
+        <h1>屋頂光電新制上路：強制規範、補助擴大與「縮水」挑戰</h1>
+        <p class="sub">2026 年 8 月 1 日起新建物強制設置光電上路。然而首波政策排除住宅與日常服務店面，使原本預估每年 660 MW 的穩定增量面臨縮水，推進難度提高。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">新建物 1,000m² 強制</span>
+        <span class="flag green">家戶補助每瓩 3,000</span>
+        <span class="flag coral">首波排除住宅縮水</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig">
+          <div class="figtitle">今周刊論壇簡報原件：政策轉向 × 市場瓶頸 × 屋頂光電新制</div>
+          <img src="assets/pdf1_page_15.png" alt="屋頂光電新制與結構性瓶頸">
+          <div class="cap">▲ 政策轉彎分析：新建物規範縮水、傳統增量來源受阻、孤兒案場維運議題</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>政策機制面向</th>
+                <th>具體法規內容與規範門檻</th>
+                <th>官方原先預期效益</th>
+                <th>實務執行痛點與衝擊</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hl-row">
+                <td><b>新建/增改建強制設置</b><br><small style="color:var(--blue)">母法：再生能源發展條例</small></td>
+                <td><b>2026 年 8 月 1 日起上路</b>：建築面積達 1,000 m² 以上之建物，每 20 m² 應設置 1 kW 太陽光電。</td>
+                <td>預期每年帶動穩定新增案量約 <b>660 MW</b>，成為主要支撐力。</td>
+                <td><b>政策急轉彎縮水！</b> 第一階段暫不納入住宅、診所、藥局及日常服務店面，新增案量顯著下修。</td>
+              </tr>
+              <tr class="good-row">
+                <td><b>私有建物家戶屋頂補助</b><br><small style="color:var(--green)">至 2028 年底</small></td>
+                <td>1,000 m² 以下私有建物，每瓩補助 <b>3,000 元</b>，單案最高補助 <b>30 萬元</b>。</td>
+                <td>激勵中小型自用屋頂建置，落實分散式公民參與綠電。</td>
+                <td>單案容量小（一般 10~30 kW），業務溝通成本極高，EPC 統包商規模效益低。</td>
+              </tr>
+              <tr class="bad-row">
+                <td><b>既有「孤兒案場」問題</b><br><small style="color:var(--coral)">早期小型施工商退場</small></td>
+                <td>早期低價搶進之小型工程商倒閉，留下大量設備損壞、無人維運之案場。</td>
+                <td>提升舊案妥善率，防範火災工安，維持實質發電能力。</td>
+                <td><b>進能服契機</b>：以高規格 O&M 團隊收購或接管維運合約，轉化為 10 年期服務收入。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card coral">
+          <h3>⚠️ 政策縮水帶來的業績警訊</h3>
+          <p>住宅與零售店面第一階段暫緩實施，意味著 2026–2027 年新建物強制屋頂的釋出量不如預期。進能服必須死守「工業區新建廠房」，並在規劃初期提前卡位。</p>
+        </div>
+        <div class="card blue">
+          <h3>🏢 建築面積 1,000 m² 是分水嶺</h3>
+          <p>工業區新建廠房幾乎 100% 超過 1,000 m²，這項法定義務將迫使企業業主與建築師必須在申請建照階段找光電廠商配合，為業務切入創造了天然的法規切入點。</p>
+        </div>
+        <div class="card green">
+          <h3>🔧 接手「孤兒案場」的維運複利</h3>
+          <p>全台累積有數百 MW 孤兒案場發電效率低落且無人保固。透過統一的維運檢測工具與保險配套，進能服能以極低獲客成本取得長約維運現金流。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：內政部國土署法規、能源署屋頂光電補助要點 ｜ 今周刊論壇第 15 頁</div>
+      <div class="pageno">1.2</div>
+    </div>
+  </section>
+
+  <!-- P1.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 政府光電政策 1.3</div>
+        <h1>2026 綠能三大結構性瓶頸：三重夾擊下的供應鏈危機</h1>
+        <p class="sub">AI 算力暴增 × 土地環評限縮 × 電網儲能不足。光電三法 9 大紅線與山坡地環評加嚴全面推高開發成本，日間光電與夜尖峰形成巨大供電時間差。</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">AI 需求 2029 增 6.5 倍</span>
+        <span class="flag amber">光電三法 9 大紅線</span>
+        <span class="flag purple">併網許可積壓 7 年</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>結構瓶頸維度</th>
+                <th>量化指標與政策法規限制</th>
+                <th>對產業造成的實質夾擊</th>
+                <th>進能服因應策略</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bad-row">
+                <td><b>① AI 算力暴增</b><br><small style="color:var(--coral)">供電時間差急遽惡化</small></td>
+                <td>
+                  • 年均用電成長率 <b>+2.5%</b> (遠高於過去十年 1.24%)<br>
+                  • AI 用電量 2029 較 2026 暴增 <b>6.5 倍</b> (+5 GW)<br>
+                  • 夜間尖峰負載年均增長 <b>2.7%</b>，與光電日間發電脫節
+                </td>
+                <td>半導體先進製程擴產提高的是「低碳穩定電力需求」，單純日間發電無法滿足 RE100 企業 24/7 綠電承諾。</td>
+                <td><b>光儲一體化 (PV+ESS)</b>：為客戶搭配儲能，移轉日間多餘綠電至夜尖峰使用。</td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>② 土地與環評加嚴</b><br><small style="color:var(--amber)">光電三法 9 大紅線</small></td>
+                <td>
+                  • <b>9 類環評紅線區</b>（風景區、濕地、野保區、特農等）<br>
+                  • 山坡地環評門檻由 20 MW 加嚴至 <b>10 MW 或 5 公頃</b><br>
+                  • 國家風景區全面<b>禁建</b>地面型及水面型光電
+                </td>
+                <td>2025 年底立法院通過光電三法加嚴，經濟部警告地面型恐陷入「地目難審、環評卡關、地方抗爭」之四輸困境。</td>
+                <td><b>嚴格選案避開紅線</b>：主攻工業區大屋頂與合規漁電專區，杜絕山坡地高風險案。</td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>③ 電網與儲能不足</b><br><small style="color:var(--purple)">輸配電瓶頸壅塞</small></td>
+                <td>
+                  • 輸電級併網許可排隊積壓長達 <b>7 年</b><br>
+                  • 北部地區電網負荷過大，台電嚴格限制 5MW 以上接入<br>
+                  • 儲能擴建速度遠不及 AI 與高科技產業需求
+                </td>
+                <td>企業反映綠電取得困難、轉供成本高昂；手中有地卻拿不到饋線容量，投資資金嚴重沉沒。</td>
+                <td><b>鎖定 161kV 特高壓</b>與變電所共址區位；建立等候池掌握饋線釋出時機。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fig">
+          <div class="figtitle">今周刊論壇簡報原件：三重夾擊下的綠能供應鏈</div>
+          <img src="assets/pdf1_page_17.png" alt="2026 綠能三大結構性瓶頸三重夾擊">
+          <div class="cap">▲ AI 算力暴增（6.5倍）× 土地環評限縮（9大紅線）× 電網儲能不足（併網等7年）</div>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card coral">
+          <h3>🛑 9 大紅線徹底封殺山坡地</h3>
+          <p>山坡地門檻降至 10MW，基本上宣告山坡地光電無利可圖（環評流程至少 1.5~2 年且不確定性極高）。未來地面型唯一合法且合規的出路，就是「農電共生」與「漁電共生」。</p>
+        </div>
+        <div class="card purple">
+          <h3>⏳ 7 年許可積壓的應對之道</h3>
+          <p>併網容量比土地更稀缺。在電網壅塞區域開發案場等於自尋死路，進能服必須優先開發台電「南崁、長安、大潭」等特高壓變電所周邊 2 公里具備擴充容量的場址。</p>
+        </div>
+        <div class="card teal">
+          <h3>🔋 儲能是時間差唯一解方</h3>
+          <p>AI 資料中心夜間負載增長 2.7%，日間光電若無儲能配套，中午超發會面臨棄電或負電價風險。PV+ESS（光儲合一）將成為 2027–2029 年的標配投標規格。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：今周刊新能源論壇簡報第 16–17 頁 ｜ 綠能供應鏈瓶頸解析</div>
+      <div class="pageno">1.3</div>
+    </div>
+  </section>
+
+  <!-- P1.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 1 · 政府光電政策 1.4</div>
+        <h1>AI 浪潮下 AIDC 專屬綠電與電網區位指引</h1>
+        <p class="sub">算力就是國力，算力背後是電力。經濟部發布 AIDC 四大電力因應對策：穩供藍圖、區位引導共址共構、5MW+ 能源說明書能效把關與政策多元出擊。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">區位引導共址共構</span>
+        <span class="flag teal">5MW+ 能源說明書</span>
+        <span class="flag green">PUE ≤ 1.3 BAT審查</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig">
+          <div class="figtitle">經濟部政策原件：AIDC 與電力設施共址共構區位引導</div>
+          <img src="assets/pdf2_page_8.png" alt="AIDC 電力區位引導共址共構">
+          <div class="cap">▲ 官方政策指引：高耗能產業優先鄰近大型電廠、優先評估超高壓變電所周邊</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>政策對策主軸</th>
+                <th>官方具體推動措施與標準門檻</th>
+                <th>國際對標與制度借鏡</th>
+                <th>進能服業務對接切入點</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hl-row">
+                <td><b>對策 1：穩供藍圖</b><br><small style="color:var(--blue)">燃氣淨增 25.98 GW</small></td>
+                <td>確保興達、台中、通霄、大林及協和等火力電廠如期上線；持續滾動發布全國電力供需報告。</td>
+                <td>國際皆將算力基礎設施納入國家戰略穩供範疇。</td>
+                <td>爭取電廠與變電所內部配電、EPC 輔助工程與緊急備援電力建置。</td>
+              </tr>
+              <tr class="good-row">
+                <td><b>對策 2：區位引導</b><br><small style="color:var(--green)">共址共構 2km 法則</small></td>
+                <td><b>落實 AIDC 與電力設施共址共構</b>：高耗能產業優先鄰近大型電廠與特高壓變電所，降低線損。</td>
+                <td>英國「AI 成長區」與無碳電源共址；德、日地方誘因引導至電力優良區。</td>
+                <td><b>主攻桃園/蘆竹/大潭等特高壓場址</b>，為美商 Colo 提供 161kV 併網統包與綠電專線。</td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>對策 3：能效把關</b><br><small style="color:var(--amber)">PUE ≤ 1.3 強制</small></td>
+                <td><b>5MW 以上資料中心強制提能源使用說明書</b>；超大型 AIDC PUE ≤ 1.3，主機代管 PUE ≤ 1.4，事前 BAT 檢核。</td>
+                <td>德新設 ≤1.2、星 ≤1.25、日 ≤1.3；增列地方就業與產業效益評估指標。</td>
+                <td>提供 <b>Vertiv 液冷＋乾冷器整合</b>、480Vac→800Vdc 集中整流，確保設計 PUE &lt; 1.15。</td>
+              </tr>
+              <tr>
+                <td><b>對策 4：多元出擊</b><br><small style="color:var(--purple)">兆元保險資金</small></td>
+                <td>推動屋頂義務、家戶補助；國家融資保證提高至八成；引導保險資金投入再生能源與儲能。</td>
+                <td>各國透過促參租稅（投資逾 3 億且算力達標享租稅優惠）帶動民間資本。</td>
+                <td>引進<b>壽險資管資金（國泰/富邦）</b>承接黑灰區重資本，進能服專注高毛利 EPC 與 15 年 NNN 包租。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card blue">
+          <h3>⚡ 算力瓶頸在電，勝負在共址</h3>
+          <p>北部地區電網飽和，台電原則上不再受理大型單點申請。唯有鄰近大型電廠或超高壓變電所 2 公里內的專用線路，才能拿到台電核供函。</p>
+        </div>
+        <div class="card teal">
+          <h3>🧊 PUE ≤ 1.3 是法定硬門檻</h3>
+          <p>5MW 以上資料中心必須取得經濟部能源使用說明書核准。傳統氣冷架構（PUE 1.5~1.6）直接被法規淘汰，液冷與高壓直流 (800Vdc) 成為唯一解。</p>
+        </div>
+        <div class="card green">
+          <h3>💼 壽險資管解決重資產包袱</h3>
+          <p>配合政府「兆元投資國家發展方案」，以壽險資金長租承接重資產，進能服自有資金降至 5~10%，將商業模式從重資產轉型為輕資產開發服務商。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：經濟部《能源開發及使用評估準則》(2025/11/3生效) ｜ 能源署研討會簡報第 7–10 頁</div>
+      <div class="pageno">1.4</div>
+    </div>
+  </section>
+
+</div>
+<!-- ================= PART 2: 一地兩用實戰 ================= -->
+<div class="view" id="view-p2">
+
+  <!-- P2.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 一地兩用實戰 2.1</div>
+        <h1>一地兩用的本質轉型：跨越社會接受度「最後一哩路」</h1>
+        <p class="sub">社會氛圍「支持能源轉型，反對在自家旁邊設置」。一地兩用（農漁電共生）的成敗關鍵不是光電板蓋多少，而是能否有效治理五大社會衝突！</p>
+      </div>
+      <div class="flags">
+        <span class="flag teal">破除 NIMBY 鄰避效應</span>
+        <span class="flag blue">養殖為本＋綠能加值</span>
+        <span class="flag green">利益共享機制</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>地方社會衝突成因</th>
+                <th>過去傳統工程思維之缺失</th>
+                <th>一地兩用治理轉型解方</th>
+                <th class="ctr">實戰成效</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bad-row">
+                <td><b>① 鄰避效應 (NIMBY)</b><br><small style="color:var(--muted)">「支持轉型，反對設置」</small></td>
+                <td>認為只要取得中央合法容許即可強行施工，忽視地方居民情感。</td>
+                <td>落實《環境影響評估法》與《再生能源發展條例》選址原則，嚴格避開敏感聚落與文化信仰中心。</td>
+                <td class="ctr"><span class="chip blue">阻力化解</span></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>② 資訊不透明</b><br><small style="color:var(--muted)">單向告知引發恐慌</small></td>
+                <td>僅於開工前一週張貼公告，地方質疑偷渡，謠言四起。</td>
+                <td>每年常態舉辦 <b>2 次以上輔導說明會</b>，建立在地常設對話機制，從「單向告知」轉向「共同參與」。</td>
+                <td class="ctr"><span class="chip teal">建立對話</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>③ 利益分配不均</b><br><small style="color:var(--muted)">「財團賺走，地方承擔」</small></td>
+                <td>給予里長少許一次性回饋金，工程結束後斷絕往來。</td>
+                <td>建立<b>「公益回饋金 ＋ 敦親睦鄰風災救助」</b>機制，將地方承擔成本轉化為地方公共服務共享效益。</td>
+                <td class="ctr"><span class="chip green">利益共享</span></td>
+              </tr>
+              <tr>
+                <td><b>④ 生計與文化衝擊</b><br><small style="color:var(--muted)">滅漁滅農滅村疑慮</small></td>
+                <td>單純追求光電滿鋪，破壞既有養殖池結構，導致漁民無法作業。</td>
+                <td><b>堅持「養殖為本 ＋ 綠能加值」</b>：導入智慧監控與微氣象設備，降低極端氣候對農漁產量之衝擊。</td>
+                <td class="ctr"><span class="chip blue">產量保障</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>⑤ 社會信任缺失</b><br><small style="color:var(--muted)">假種田、真種電弊端</small></td>
+                <td>無實質耕作，被媒體爆料雜草叢生，面臨行政處分與撤照。</td>
+                <td>建立養殖工作日誌與定期查核機制，全區取得<b>水產品產銷履歷認證</b>，強化品質與社會公信力。</td>
+                <td class="ctr"><span class="chip green">法規零風險</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fig">
+          <div class="figtitle">今周刊論壇簡報原件：跨越綠能社會接受度的痛點解構</div>
+          <img src="assets/pdf1_page_10.png" alt="社會氛圍與五大痛點治理">
+          <div class="cap">▲ 鄰避效應、資訊不透明、利益分配不均、生計衝擊、信任缺失之全流程治理</div>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card teal">
+          <h3>🐟 養殖為本是唯一合法根基</h3>
+          <p>主管機關對漁電共生加強實地稽核。沒有實質養殖事實，電業執照隨時會被撤銷。進能服必須讓光電設備服務於養殖生產，而非喧賓奪主。</p>
+        </div>
+        <div class="card amber">
+          <h3>🤝 從「補償思維」轉向「共享效益」</h3>
+          <p>一次性補償金只會引發後續源源不絕的索求；將部分售電利潤提撥為地方長照、急難救助車輛與風災搶修基金，案場才能真正被地方接納為資產。</p>
+        </div>
+        <div class="card green">
+          <h3>📜 產銷履歷是最好的防禦護甲</h3>
+          <p>養殖成果取得政府產銷履歷認證，公開生產履歷與水質檢驗數據，不管是面對環團抗議、主管機關抽檢或檢調檢舉，都能瞬間拿出無懈可擊的事實證據。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：今周刊新能源論壇簡報第 10 頁 ｜ 綠能社會接受度與衝突治理</div>
+      <div class="pageno">2.1</div>
+    </div>
+  </section>
+
+  <!-- P2.2 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 一地兩用實戰 2.2</div>
+        <h1>志光 85MW 漁電共生實戰落地典範</h1>
+        <p class="sub">114 公頃、85 MW 光電 ＋ 35 MW 光儲示範場。案場規劃從養殖需求出發，光電遮蔽率嚴格控制在 40%，以科技化水質監控保障養殖戶收益。</p>
+      </div>
+      <div class="flags">
+        <span class="flag green">志光 85MW / 114公頃</span>
+        <span class="flag blue">40% 遮蔽率最適化</span>
+        <span class="flag teal">智慧微氣象站</span>
+        <span class="flag amber">抽查產銷履歷</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig">
+          <div class="figtitle">今周刊論壇簡報原件：志光 85MW 漁電共生實戰成功案例</div>
+          <img src="assets/pdf1_page_11.png" alt="志光 85MW 漁電共生利益共享">
+          <div class="cap">▲ 輔導說明會 2次/年 × 產品共享 × 產學外交（史瓦帝尼與環團參訪示範案場）</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>實戰落地核心模組</th>
+                <th>具體執行規格與技術參數</th>
+                <th>管理效益與營運指標</th>
+                <th class="ctr">驗證依據</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hl-row">
+                <td><b>光電遮蔽率最適化</b><br><small style="color:var(--blue)">避免單純追求容量</small></td>
+                <td>嚴格依魚種習性配置光電板遮蔽率 <b>40%</b>，保留充足日照池面促進藻水與溶氧生成。</td>
+                <td>保障魚塭光合作用正常進行，消除傳統全面覆蓋導致魚群病變死亡之疑慮。</td>
+                <td class="ctr"><span class="chip green">產量穩定</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>養殖物種精準配對</b><br><small style="color:var(--teal)">實地養殖查核</small></td>
+                <td>選定耐低光或底棲性經濟物種：<b>龍虎斑、黃臘鰺、金錢魚、草蝦</b>，建立最適養殖週期。</td>
+                <td>龍虎斑與黃臘鰺高經濟價值，年產值遠高於傳統虱目魚，大幅增進養殖戶總收益。</td>
+                <td class="ctr"><span class="chip blue">抽檢合格</span></td>
+              </tr>
+              <tr>
+                <td><b>微氣象站與智能水車</b><br><small style="color:var(--green)">氣候韌性科技化</small></td>
+                <td>設置場域微氣象站（即時偵測溫濕度、風向風力）；搭配池水<b>含氧量、pH 值感測器</b>。</td>
+                <td>讓水車打水從憑個人經驗轉為<b>自動化數據調控</b>；冬季自動啟動防寒布棚，抗寒減災。</td>
+                <td class="ctr"><span class="chip teal">科技升級</span></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>養殖日誌大數據庫</b><br><small style="color:var(--amber)">可追溯、可判斷、可還原</small></td>
+                <td>每日記錄投餌時間、飼料量、生長曲線、水質異常點，建立案場全生命週期大數據。</td>
+                <td>遭遇水質異常即刻警報並還原原因，杜絕死魚爭議；全量提供主管機關隨時抽查。</td>
+                <td class="ctr"><span class="chip green">備查合規</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>漁民利益深度綁定</b><br><small style="color:var(--purple)">租金減免與承租權保障</small></td>
+                <td>主動調降魚塭租金，保障原養殖戶具備<b>優先承租權</b>，並於歲末分享漁獲收成。</td>
+                <td>吸引在地青年漁民第二代返鄉投入智慧養殖，解決台灣農漁村高齡化斷層危機。</td>
+                <td class="ctr"><span class="chip purple">地方共融</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card green">
+          <h3>🌡️ 40% 遮蔽率是產量安全線</h3>
+          <p>志光案場實證顯示：40% 遮蔽率既能在盛夏為池水降溫 2~3°C 減少高溫熱緊迫，又保留了足夠光線供藻類繁殖，是兼顧發電量與養殖收成的黃金比例。</p>
+        </div>
+        <div class="card teal">
+          <h3>📊 讓養殖管理從經驗轉向數據</h3>
+          <p>微型氣象站與水質感測器解決了傳統養殖「靠天吃飯」的痛點。水質異常在 5 分鐘內自動推播手機，大幅降低翻池暴斃風險，養殖戶因此成為光電最堅定的盟友。</p>
+        </div>
+        <div class="card amber">
+          <h3>👨‍🌾 吸引青年二代返鄉接棒</h3>
+          <p>傳統魚塭勞動辛苦無人接班。志光案場導入智慧物聯網監控與優質設備，成功吸引養殖戶二代青年返鄉接班，成為產學交流與國際外交參訪的國家級亮點。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：今周刊新能源論壇簡報第 11–14 頁 ｜ 志光 85MW 漁電共生案場實測</div>
+      <div class="pageno">2.2</div>
+    </div>
+  </section>
+
+  <!-- P2.3 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 一地兩用實戰 2.3</div>
+        <h1>地方共榮機制與大亞綠能 240MW 實踐：「社會信任大於發電量」</h1>
+        <p class="sub">大亞綠能 240MW 案場實證：不是「被犧牲」而是「共享利益」。完善水門水渠公共養護，搭配 0403 地震儲能 1 秒釋出 510MW 穩住電網，實現全方位韌性。</p>
+      </div>
+      <div class="flags">
+        <span class="flag green">大亞綠能 240MW 案例</span>
+        <span class="flag purple">0403 地震 510MW 救網</span>
+        <span class="flag blue">公共水利設施認養</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>利害關係人面向</th>
+                <th>實務落實作為與具體支援行動</th>
+                <th>創造的共生價值與社會信任</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="good-row">
+                <td><b>養殖戶夥伴</b><br><small style="color:var(--green)">生產端核心</small></td>
+                <td>• 工程設計與養殖戶充分溝通，依物種特性規劃<br>• 保障<b>優先飼養權</b>、租金優化、提撥養殖發展基金<br>• 協助取得養殖登記證、水權申請與全區產銷履歷</td>
+                <td>漁民從單純承租戶轉型為「智慧綠能養殖合夥人」，生產環境與抗災力全面升級。</td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>鄰里與社區</b><br><small style="color:var(--blue)">在地常設支援</small></td>
+                <td>• 定期工程進度通報，落實施工交維計畫避開交通尖峰<br>• <b>在地信仰公廟修繕與文化贊助</b><br>• 捐助地方救護與急難救助車輛、常態提撥社區發展基金</td>
+                <td>案場融入在地生活圈，化解村民反彈，讓地方長者與鄉親切身感受光電帶來的公共回饋。</td>
+              </tr>
+              <tr class="good-row">
+                <td><b>環境與公共水利</b><br><small style="color:var(--teal)">防汛排水基礎</small></td>
+                <td>• AC 瀝青路面全線重新鋪設，方便農機與居民通行<br>• <b>主動認養公共水渠、水閘門、水斗門定期清淤維護</b><br>• 增設防汛高規格排水涵管，解決颱風季積淹水宿疾</td>
+                <td>徹底打破「光電破壞水利防汛」之謠言，反向提升全區防洪耐災等級，受到農田水利會肯定。</td>
+              </tr>
+              <tr class="bad-row">
+                <td><b>電網韌性 (光儲)</b><br><small style="color:var(--purple)">0403 大地震實證</small></td>
+                <td>• 2024/4/3 規模 7.2 花蓮大地震，台電多部機組跳脫，頻率暴跌至 <b>59.46 Hz</b><br>• 儲能系統 <b>1 秒內瞬間釋出 510 MW</b>，阻止低頻卸載，避免全島陷入大停電</td>
+                <td>證明儲能不是嫌惡設施，而是守護台灣高科技產業與民生用電不中斷的<b>電網定海神針</b>！</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="fig">
+          <div class="figtitle">今周刊論壇簡報原件：大亞綠能 240MW 社會信任大於發電量</div>
+          <img src="assets/pdf1_page_27.png" alt="大亞綠能 240MW 社會信任模型">
+          <div class="cap">▲ 養殖戶、地主、鄰里、環境公共水渠全面共好，不是被犧牲而是共享利益</div>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card green">
+          <h3>🌊 認養公共水閘門是神來之筆</h3>
+          <p>沿海漁村最怕颱風大潮水閘門年久失修淹死魚蝦。大亞與進能服出資維護公共水閘門與排水溝，直接解決了漁民數十年的心頭大患，贏得全村口碑支持。</p>
+        </div>
+        <div class="card purple">
+          <h3>⚡ 0403 地震：儲能救援一戰成名</h3>
+          <p>花蓮 7.2 強震台電跳脫 3,200MW 電力，儲能系統在 10 秒內補上 510MW 關鍵負載，防止全台大停電。這項實證成為向地方說明儲能安全性的最強背書。</p>
+        </div>
+        <div class="card blue">
+          <h3>🤝 「社會信任」才是最高估值</h3>
+          <p>電價與材料成本每季波動，但案場在地方建立的社會信任與法規零瑕疵紀錄，是金融機構與主權基金進行併購或資產證券化 (REITs) 時溢價最高的核心要素。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：今周刊新能源論壇簡報第 20、26、27 頁 ｜ 大亞綠能與儲能系統救援實績</div>
+      <div class="pageno">2.3</div>
+    </div>
+  </section>
+
+  <!-- P2.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 2 · 一地兩用實戰 2.4</div>
+        <h1>跨越最後一哩路：五大策略框架與制度協調</h1>
+        <p class="sub">綠能產業面臨地緣政治與政策環社考驗。唯有透過制度協調、透明資訊、在地參與、生態優先、共享雙贏五大支柱，才能阻斷千億撤資危機。</p>
+      </div>
+      <div class="flags">
+        <span class="flag blue">制度協調</span>
+        <span class="flag teal">資訊透明</span>
+        <span class="flag green">在地參與</span>
+        <span class="flag amber">生態優先</span>
+        <span class="flag purple">共享雙贏</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig">
+          <div class="figtitle">今周刊論壇簡報原件：跨越綠能最後一哩路的五大策略框架</div>
+          <img src="assets/pdf1_page_25.png" alt="跨越最後一哩路策略框架">
+          <div class="cap">▲ 制度協調 × 透明資訊 × 在地參與 × 生態優先 × 共享雙贏</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>五大治理支柱</th>
+                <th>核心內涵與制度要求</th>
+                <th>進能服 2027–2029 執行對策</th>
+                <th class="ctr">戰略目標</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hl-row">
+                <td><b>① 制度協調</b><br><small style="color:var(--blue)">跨部會整合</small></td>
+                <td>建立「能源 × 農業 × 環境 × 海洋」跨部會整合單一窗口，減少行政審查碎裂，完善農漁電共存法規規範。</td>
+                <td>專案團隊設專責法規經理，對接縣府農業處、建設局與台電營業處，以套裝法遵文件送審。</td>
+                <td class="ctr"><span class="chip blue">縮短週期</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>② 透明資訊</b><br><small style="color:var(--teal)">全流程平台</small></td>
+                <td>建立開發全流程公開平台，數據即時更新，決策過程對社區公民開放，具備完整可追溯性。</td>
+                <td>將場域微氣象與水質檢驗數據串接至公開看板，以數據說話，消除黑箱操作疑慮。</td>
+                <td class="ctr"><span class="chip teal">杜絕造假</span></td>
+              </tr>
+              <tr>
+                <td><b>③ 在地參與</b><br><small style="color:var(--green)">事前諮商</small></td>
+                <td>規劃初期即納入社區居民與利害關係人，以「事前諮商」取代「事後補償」，充分尊重地方知識。</td>
+                <td>在場址勘查前即指派公關經理拜會村里長與耆老，將地方排水與巡查需求納入施工藍圖。</td>
+                <td class="ctr"><span class="chip green">前置化解</span></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>④ 生態優先</b><br><small style="color:var(--amber)">避開敏感區</small></td>
+                <td>務實界定環社檢核範圍，配合光電政策環評，嚴格避開敏感棲地、黑面琵鷺度冬區與法定濕地。</td>
+                <td><b>堅決不碰爭議地塊</b>：GIS 圖資套疊篩檢，凡落入 9 大紅線或爭議區一律自動放棄。</td>
+                <td class="ctr"><span class="chip amber">零抗爭</span></td>
+              </tr>
+              <tr class="good-row">
+                <td><b>⑤ 共享雙贏</b><br><small style="color:var(--purple)">收益留地方</small></td>
+                <td>推動公民電廠與長期公共收益機制，取代一次性微薄補償，讓綠能收益真正留用於地方公共福祉。</td>
+                <td>研議「社區綠能合作社」分潤機制，提供部分機組讓在地鄉親認購持股，同享 20 年售電回報。</td>
+                <td class="ctr"><span class="chip purple">終生盟友</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card blue">
+          <h3>🏛️ 跨部會碎裂是最大行政成本</h3>
+          <p>一個漁電共生案往往要跑經濟部、農業部、環境部、內政部與地方政府五個婆婆。進能服必須建立模組化申請範本，將行政審查時間從 18 個月壓縮至 9 個月。</p>
+        </div>
+        <div class="card green">
+          <h3>🌱 避開爭議地塊是最高智慧</h3>
+          <p>世界上沒有任何高回報值得公司捲入生態抗爭與地方司法調查。在專案前期透過 GIS 衛星空照與環保圖資一票否決，省下的法律與公關成本不可估量。</p>
+        </div>
+        <div class="card purple">
+          <h3>💰 讓鄉親成為股東，抗爭自然消解</h3>
+          <p>借鏡丹麥與德國能源合作社經驗：當村民屋頂與地方活動中心就是發電廠的一分子、每個月戶頭都能收到售電分潤時，居民就會主動巡檢護衛案場安全。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：今周刊新能源論壇簡報第 22–25 頁 ｜ 跨越最後一哩路策略框架</div>
+      <div class="pageno">2.4</div>
+    </div>
+  </section>
+
+</div>
+<!-- ================= PART 3: 決策問題分類攻防 ================= -->
+<div class="view" id="view-p3">
+
+  <!-- P3.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 核心決策問題分類 3.1</div>
+        <h1>問題領域一：資本配置、現金底線與資產定位決策（Q1–Q5）</h1>
+        <p class="sub">聚焦資本回報與公司定位：屋頂與地面如何分配？成本暴漲時煞車點何在？進能服要當純 EPC、電廠持有者還是運維服務商？合理市佔如何設定？</p>
       </div>
       <div class="flags">
         <span class="flag blue">資本配置</span>
-        <span class="flag coral">風險底線</span>
-        <span class="flag amber">資產定位</span>
+        <span class="flag coral">現金底線 CCC</span>
+        <span class="flag amber">EPC vs 資產持有</span>
       </div>
     </div>
     <div class="slide-body">
       <div class="split-img-left">
         <!-- SVG Capital Allocation Gate Flow -->
         <div class="fig">
-          <div class="figtitle">董事長資本配置決策閘門機制（A3 方案流程）</div>
+          <div class="figtitle">資本閘門撥款流程與流動性防護體系（A3 方案拓撲）</div>
           <svg viewBox="0 0 520 280" role="img" aria-label="資本閘門架構">
             <rect x="20" y="25" width="220" height="75" rx="6" fill="#E8F1F9" stroke="#1968AD" stroke-width="2"/>
             <text x="130" y="52" fill="#12293D" font-size="13" font-weight="800" text-anchor="middle">屋頂軌資本釋放閘門</text>
-            <text x="130" y="72" fill="#5B7285" font-size="11" text-anchor="middle">觸發：毛利率 ≥ 門檻</text>
-            <text x="130" y="88" fill="#1968AD" font-size="10" font-weight="700" text-anchor="middle">破線自動減碼，防範衝量虧損</text>
+            <text x="130" y="72" fill="#5B7285" font-size="11" text-anchor="middle">觸發：毛利率 ≥ 設定門檻</text>
+            <text x="130" y="88" fill="#1968AD" font-size="10" font-weight="700" text-anchor="middle">毛利破線自動減碼，防衝量虧損</text>
 
             <rect x="280" y="25" width="220" height="75" rx="6" fill="#E2F5F7" stroke="#1BB1BF" stroke-width="2"/>
             <text x="390" y="52" fill="#12293D" font-size="13" font-weight="800" text-anchor="middle">地面軌里程碑撥款閘門</text>
-            <text x="390" y="72" fill="#5B7285" font-size="11" text-anchor="middle">觸發：取得具約束力農漁約</text>
-            <text x="390" y="88" fill="#12818C" font-size="10" font-weight="700" text-anchor="middle">未達合約標準禁止動支前期款</text>
+            <text x="390" y="72" fill="#5B7285" font-size="11" text-anchor="middle">觸發：取得具約束力農漁合約</text>
+            <text x="390" y="88" fill="#12818C" font-size="10" font-weight="700" text-anchor="middle">未達合約標準禁止動支實質款</text>
 
             <path d="M130 100 L130 140 L260 140 M390 100 L390 140 L260 140" stroke="#9FB1C0" stroke-width="2" fill="none"/>
             
             <rect x="130" y="150" width="260" height="55" rx="6" fill="#0C3A63"/>
             <text x="260" y="174" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">動態管理會計監控中樞</text>
-            <text x="260" y="192" fill="#8FD9E4" font-size="11" text-anchor="middle">即時監控：現金轉換天數 (CCC)</text>
+            <text x="260" y="192" fill="#8FD9E4" font-size="11" text-anchor="middle">即時監控：現金轉換週期 (CCC 天數)</text>
 
             <rect x="60" y="220" width="400" height="42" rx="4" fill="#FCF2DE" stroke="#E09A2B" stroke-width="1.5"/>
-            <text x="260" y="245" fill="#9a6a10" font-size="11.5" font-weight="700" text-anchor="middle">防禦原則：以現金回流天數取代帳面毛利，守住公司流動性護城河</text>
+            <text x="260" y="245" fill="#9a6a10" font-size="11.5" font-weight="700" text-anchor="middle">防禦原則：以現金回流天數取代帳面毛利，守住流動性護城河</text>
           </svg>
           <div class="cap">▲ A3 階段性資本閘門：避免固定比例配置導致單軌套牢</div>
         </div>
@@ -724,10 +1088,10 @@ svg text{font-family:inherit}
           <table>
             <thead>
               <tr>
-                <th>問題</th>
-                <th>A1 立場與代價</th>
-                <th>A2 立場與代價</th>
-                <th>A3 立場與代價</th>
+                <th>決策核心問題</th>
+                <th>立場 A1 與必須承擔之代價</th>
+                <th>立場 A2 與必須承擔之代價</th>
+                <th>立場 A3 與必須承擔之代價 (推薦)</th>
               </tr>
             </thead>
             <tbody>
@@ -735,31 +1099,31 @@ svg text{font-family:inherit}
                 <td><b>Q1 資本分配比例</b><br><small style="color:var(--muted)">屋頂 vs 地面資本效率</small></td>
                 <td><b>重壓屋頂 (7:3)</b>：周轉快、風險低。<br><small style="color:var(--coral)">代價：天花板明確，毛利三年內被磨平。</small></td>
                 <td><b>重壓地面複合</b>：年金型資產護城河。<br><small style="color:var(--coral)">代價：前期回收長，成敗綁外部團隊。</small></td>
-                <td><b>階段性資本閘門 (推薦)</b>：依毛利與合約里程碑撥款。<br><small style="color:var(--coral)">代價：需高紀律管會即時資料。</small></td>
+                <td><b>階段性資本閘門 (推薦)</b>：依毛利與合約里程碑動態撥款。<br><small style="color:var(--coral)">代價：需高紀律管會即時資料系統。</small></td>
               </tr>
               <tr class="hl-row">
-                <td><b>Q2 成本底線與減速</b><br><small style="color:var(--muted)">衝量 vs 保本煞車點</small></td>
-                <td><b>設毛利率絕對下限</b>：破線一律不接。<br><small style="color:var(--coral)">代價：短期營收掉，同業低價搶市。</small></td>
-                <td><b>合約物價連動條款</b>：成本轉嫁業主。<br><small style="color:var(--coral)">代價：需極高議價力，中小業主不埋單。</small></td>
-                <td><b>以現金轉換週期 (CCC) 為判準 (推薦)</b>：墊款過長即停。<br><small style="color:var(--coral)">代價：概念抽象，需財務每月精算。</small></td>
+                <td><b>Q2 成本暴漲底線</b><br><small style="color:var(--muted)">衝量 vs 減速煞車點</small></td>
+                <td><b>設毛利率絕對下限</b>：破線一律不接單。<br><small style="color:var(--coral)">代價：短期營收掉，同業削價卡位搶市。</small></td>
+                <td><b>合約物價連動條款</b>：鋼銅物價指數轉嫁。<br><small style="color:var(--coral)">代價：需極高議價力，中小業主普遍拒絕。</small></td>
+                <td><b>以現金轉換天數 (CCC) 煞車 (推薦)</b>：墊款過長即停。<br><small style="color:var(--coral)">代價：概念對第一線較抽象，需財務精算。</small></td>
               </tr>
               <tr>
-                <td><b>Q3 EPC vs 資產持有</b><br><small style="color:var(--muted)">純承包 vs 電廠持有</small></td>
-                <td><b>守住 EPC 本業</b>：專注低成本短交期。<br><small style="color:var(--coral)">代價：價格戰長期毛利向下，依賴年接單。</small></td>
+                <td><b>Q3 EPC vs 資產持有</b><br><small style="color:var(--muted)">承包商 vs 電廠持有</small></td>
+                <td><b>守住 EPC 本業</b>：專注低成本短交期。<br><small style="color:var(--coral)">代價：價格競爭長期毛利向下，依賴年接單。</small></td>
                 <td><b>往下游持有電廠</b>：獲取 20 年售電現金流。<br><small style="color:var(--coral)">代價：負債比攀升，承擔長期天候電價風險。</small></td>
-                <td><b>持有維運合約 (折衷)</b>：以工程換長期運維合約。<br><small style="color:var(--coral)">代價：需規模經濟效益，前期備品庫存成本。</small></td>
+                <td><b>持有維運合約 (折衷首選)</b>：以工程換長期運維長約。<br><small style="color:var(--coral)">代價：需規模經濟效益，前期備品庫存成本。</small></td>
               </tr>
-              <tr>
-                <td><b>Q4 農漁團隊成敗風險</b><br><small style="color:var(--muted)">外部變數控制力</small></td>
-                <td><b>成立合資公司 (JV)</b>：利益股權綁死。<br><small style="color:var(--coral)">代價：承擔農漁本業病害與勞力虧損。</small></td>
-                <td><b>嚴格替換外包機制</b>：未達標即退場。<br><small style="color:var(--coral)">代價：地方關係與作期備查使替換耗時逾年。</small></td>
-                <td><b>自建最小可行營運能力</b>：自有場實作取得真數據。<br><small style="color:var(--coral)">代價：新領域管理成本高，3 年內純投資。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q5 市佔目標與組織</b><br><small style="color:var(--muted)">成長預期與人員配置</small></td>
-                <td><b>不設市佔，設能力指標</b>：單位工時與週期。<br><small style="color:var(--coral)">代價：對董事會與投資人溝通說服力較弱。</small></td>
+              <tr class="hl-row">
+                <td><b>Q4 市佔目標與擴編</b><br><small style="color:var(--muted)">組織擴充 vs 市場節奏</small></td>
+                <td><b>不設市佔，設能力指標</b>：單位工時與週期。<br><small style="color:var(--coral)">代價：對董事會與外部投資人溝通較弱。</small></td>
                 <td><b>設年新增 MW，倒推組織</b>：規模擴編。<br><small style="color:var(--coral)">代價：政策選商延後時，組織淪為固定負擔。</small></td>
-                <td><b>分軌計分卡</b>：屋頂看量與成本，地面看質與驗證。<br><small style="color:var(--coral)">代價：內部兩軌爭奪資源，仲裁管理成本高。</small></td>
+                <td><b>分軌計分卡 (推薦)</b>：屋頂看量與成本，地面看質與驗證。<br><small style="color:var(--coral)">代價：內部兩軌爭奪資源，仲裁管理成本高。</small></td>
+              </tr>
+              <tr>
+                <td><b>Q5 價值鏈終局落點</b><br><small style="color:var(--muted)">EPC 是否被夾在中間</small></td>
+                <td><b>價值往上游開發權移動</b>：累積自有饋線案源。<br><small style="color:var(--coral)">代價：開發為長週期負現金流，資金耐受高。</small></td>
+                <td><b>價值往下游維運售電移動 (推薦)</b>：鎖定 20 年營運。<br><small style="color:var(--coral)">代價：下游對手皆為大型金控，需資管能力。</small></td>
+                <td><b>價值留在極致規模 EPC</b>：贏者通吃壓低成本。<br><small style="color:var(--coral)">代價：要求巨額擴張，一旦在成本落後即出局。</small></td>
               </tr>
             </tbody>
           </table>
@@ -767,7 +1131,7 @@ svg text{font-family:inherit}
       </div>
       <div class="three-col" style="margin-top:6px">
         <div class="card blue">
-          <h3>💰 資本分配的代價</h3>
+          <h3>💰 資本配置不可押注單軌</h3>
           <p>屋頂雖然快但利潤易被磨平；地面雖然規模大但回收期逾 24 個月且高度依賴外部人。董事長拍板的核心是「階段性閘門」而非一次性定額分配。</p>
         </div>
         <div class="card coral">
@@ -781,23 +1145,23 @@ svg text{font-family:inherit}
       </div>
     </div>
     <div class="slide-foot">
-      <div>來源：董事長決策議程 ｜ 2.2 事業經營 × 1.2 五年計畫</div>
-      <div class="pageno">1.1</div>
+      <div>來源：核心決策問題分類 ｜ 資本配置與資產定位對照</div>
+      <div class="pageno">3.1</div>
     </div>
   </section>
 
-  <!-- P1.2 -->
+  <!-- P3.2 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 1 · 五角色提問 1.2</div>
-        <h1>二、總經理視角：營運目標、執行力與跨區瓶頸（Q1–Q5）</h1>
-        <p class="sub">總經理直面業務指標與交付品質的拉扯：如何破解屋頂案三大卡點？長約鎖價如何避免押錯方向？工程標準化從何切入回收最快？</p>
+        <div class="eyebrow">Part 3 · 核心決策問題分類 3.2</div>
+        <h1>問題領域二：營運目標、接單篩選與工程標準化決策（Q6–Q11）</h1>
+        <p class="sub">聚焦第一線交付能力：每年要接多少 MW？屋頂三大卡點如何突破？長約鎖價鎖量還是鎖產能？標準化從何切入？在手已報價案遇成本暴漲如何處置？</p>
       </div>
       <div class="flags">
         <span class="flag teal">雙軌戰略突圍</span>
-        <span class="flag blue">長約鎖價</span>
-        <span class="flag amber">跨區協調機制</span>
+        <span class="flag blue">設計標準化</span>
+        <span class="flag amber">鎖產能交期</span>
       </div>
     </div>
     <div class="slide-body">
@@ -806,420 +1170,98 @@ svg text{font-family:inherit}
           <table>
             <thead>
               <tr>
-                <th>問題</th>
-                <th>A1 立場與代價</th>
-                <th>A2 立場與代價</th>
-                <th>A3 立場與代價</th>
+                <th>決策核心問題</th>
+                <th>立場 A1 與必須承擔之代價</th>
+                <th>立場 A2 與必須承擔之代價</th>
+                <th>立場 A3 與必須承擔之代價 (推薦)</th>
               </tr>
             </thead>
             <tbody>
               <tr class="hl-row">
-                <td><b>Q1 每年接單 MW 目標</b><br><small style="color:var(--muted)">市場成長 vs 交付能力</small></td>
-                <td><b>現有產能上限反推</b>：確保交期與品質。<br><small style="color:var(--coral)">代價：成長被產能鎖死，拱手讓出市佔。</small></td>
-                <td><b>以毛利總額為目標</b>：促使團隊做大案做優質案。<br><small style="color:var(--coral)">代價：成本暴漲期投標預估失真，數字造假。</small></td>
-                <td><b>MW 綁定履約品質門檻 (推薦)</b>：交期與一次驗收未達標不計績效。<br><small style="color:var(--coral)">代價：指標多，需客觀數據系統防美化。</small></td>
+                <td><b>Q6 每年接單 MW 目標</b><br><small style="color:var(--muted)">產能上限 vs 市場追趕</small></td>
+                <td><b>現有產能上限反推</b>：確保交期與施工品質。<br><small style="color:var(--coral)">代價：成長被產能鎖死，拱手讓出市場份額。</small></td>
+                <td><b>以毛利總額為目標</b>：促使團隊做大做優質案。<br><small style="color:var(--coral)">代價：成本暴漲期投標預估失真，數字造假。</small></td>
+                <td><b>MW 綁定履約品質門檻 (推薦)</b>：驗收未達標不計績效。<br><small style="color:var(--coral)">代價：需客觀數據系統防範前線報喜不報憂。</small></td>
               </tr>
               <tr>
-                <td><b>Q2 屋頂三大卡點破解</b><br><small style="color:var(--muted)">沒意願 / 沒饋線 / 開發費高</small></td>
-                <td><b>只解「業主沒意願」</b>：發揮主場提案與 ESG 量化能力。<br><small style="color:var(--coral)">代價：放棄已有名單但卡饋線案，接單受限。</small></td>
-                <td><b>轉化「沒饋線」為時間差</b>：建立排隊等待池，搶釋出首波。<br><small style="color:var(--coral)">代價：養客戶耗成本，釋出時恐被低價攔截。</small></td>
-                <td><b>開發費高改走租賃分潤 (推薦)</b>：拉入投資方以時間換空間。<br><small style="color:var(--coral)">代價：交易結構複雜，需承擔長期營運責任。</small></td>
+                <td><b>Q7 屋頂三大卡點破解</b><br><small style="color:var(--muted)">沒意願 / 沒饋線 / 開發費高</small></td>
+                <td><b>只解「業主沒意願」</b>：發揮主場提案能力。<br><small style="color:var(--coral)">代價：放棄已有名單但卡饋線案，接單受限。</small></td>
+                <td><b>轉化「沒饋線」為時間差</b>：建立排隊等待庫存。<br><small style="color:var(--coral)">代價：養客戶耗成本，釋出時恐被同業攔截。</small></td>
+                <td><b>開發費高改走租賃分潤 (推薦)</b>：拉入投資方分攤。<br><small style="color:var(--coral)">代價：交易結構複雜，需承擔長期營運責任。</small></td>
               </tr>
               <tr class="hl-row">
-                <td><b>Q3 長約鎖價控制損失</b><br><small style="color:var(--muted)">物料採購長約量與期</small></td>
+                <td><b>Q8 長約鎖價控制損失</b><br><small style="color:var(--muted)">長約量與期如何定</small></td>
                 <td><b>僅鎖已簽約專案用料</b>：不做投機性鎖價。<br><small style="color:var(--coral)">代價：失去低點大量鎖價紅利，成本逐案墊高。</small></td>
-                <td><b>分批鎖價時間分散</b>：平均成本法降低單點風險。<br><small style="color:var(--coral)">代價：非最低價，行政議約繁瑣，小廠不配合。</small></td>
-                <td><b>不鎖價改鎖產能與交期 (推薦)</b>：確保不違約，市價結算。<br><small style="color:var(--coral)">代價：暴露價格波動，可能需付優先供貨溢價。</small></td>
+                <td><b>分批鎖價時間分散</b>：平均成本法降單點風險。<br><small style="color:var(--coral)">代價：非最低價，行政議約繁瑣，小廠不配合。</small></td>
+                <td><b>不鎖價改鎖產能與交期 (推薦)</b>：確保不違約罰款。<br><small style="color:var(--coral)">代價：暴露價格波動，可能需付優先供貨溢價。</small></td>
               </tr>
               <tr>
-                <td><b>Q4 工程標準化切入點</b><br><small style="color:var(--muted)">何處回收槓桿最大</small></td>
-                <td><b>從設計端收斂 (推薦)</b>：模組、支架、線徑標準組合。<br><small style="color:var(--coral)">代價：犧牲個案最佳化，懂行業主可能挑戰。</small></td>
-                <td><b>從施工工法與檢核開始</b>：統一工班順序與安全查核。<br><small style="color:var(--coral)">代價：上游設計百花齊放會抵銷工法標準化效果。</small></td>
-                <td><b>從料件編碼與 BOM 開始</b>：地基統一使成本可跨案比對。<br><small style="color:var(--coral)">代價：純後台工程，半年無外部可見成果。</small></td>
+                <td><b>Q9 工程標準化切入點</b><br><small style="color:var(--muted)">從哪裡開始回收最快</small></td>
+                <td><b>從設計端收斂 (推薦)</b>：模組支架標準組合庫。<br><small style="color:var(--coral)">代價：放棄個案最佳化，懂行業主可能挑戰。</small></td>
+                <td><b>從施工工法與檢核開始</b>：統一工班順序規範。<br><small style="color:var(--coral)">代價：上游設計百花齊放會抵銷工法標準化。</small></td>
+                <td><b>從料件編碼與 BOM 開始</b>：統一資料地基。<br><small style="color:var(--coral)">代價：純後台工程，半年無外部可見成果。</small></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>Q10 設計/採購/業務優先序</b><br><small style="color:var(--muted)">資源不足先做哪個</small></td>
+                <td><b>先做設計最佳化 (推薦)</b>：一省兩用槓桿最大。<br><small style="color:var(--coral)">代價：效益在下一批新案展現，在手案毛利無救。</small></td>
+                <td><b>先做採購降本</b>：鎖量見效快，單季反映財報。<br><small style="color:var(--coral)">代價：供應商讓利空間有頂，邊際效益遞減。</small></td>
+                <td><b>先做業務串聯搶量</b>：無案源其他皆空談。<br><small style="color:var(--coral)">代價：上漲期衝量恐簽下一批虧損合約成包袱。</small></td>
               </tr>
               <tr>
-                <td><b>Q5 跨區協調瓶頸重編</b><br><small style="color:var(--muted)">北中南資源打散重整</small></td>
-                <td><b>打散重編為功能中心</b>：設計與採購總部收回。<br><small style="color:var(--coral)">代價：區域主管抵抗強，前線反應速度短期下滑。</small></td>
-                <td><b>維持現有但統一資料</b>：總部掌握即時進度與成本。<br><small style="color:var(--coral)">代價：資料建置期長，未來一年協調依舊卡頓。</small></td>
-                <td><b>考核引入跨區支援誘因 (推薦)</b>：支援他區計入主管績效。<br><small style="color:var(--coral)">代價：無法解決總體人力不足，只是重新拆分。</small></td>
+                <td><b>Q11 在手已報價未簽約案</b><br><small style="color:var(--muted)">成本暴漲時定價處置</small></td>
+                <td><b>設定有效期嚴格重報</b>：過期自動重新核價。<br><small style="color:var(--coral)">代價：舊客認為不守信用，競爭案等於退出。</small></td>
+                <td><b>調降規格吸收成本</b>：總價不變，調整用料。<br><small style="color:var(--coral)">代價：損害長期發電績效，日後糾紛侵蝕信譽。</small></td>
+                <td><b>策略價值分類處理 (推薦)</b>：指標案吸收，一般重報。<br><small style="color:var(--coral)">代價：標準易被業務濫用，內部協商內耗。</small></td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="fig">
-          <div class="figtitle">簡報第 4 頁原圖：雙軌戰略並進 18.8 GW 目標之突圍路線</div>
-          <img src="assets/slide_4_img_1.png" alt="雙軌戰略並進原圖">
-          <div class="cap">▲ Track A 屋頂優先（極致標準化） vs Track B 地面複合（真農漁營運錨點）</div>
+          <div class="figtitle">簡報第 4 頁原圖：雙軌戰略突圍路線</div>
+          <img src="assets/slide_4_img_1.png" alt="雙軌戰略突圍路線">
+          <div class="cap">▲ Track A 屋頂優先（極致高轉換率與標準化） vs Track B 地面複合（真農漁營運錨點）</div>
         </div>
       </div>
       <div class="three-col" style="margin-top:6px">
         <div class="card teal">
           <h3>📌 設計端是最大槓桿</h3>
-          <p>總經理推動標準化，設計端每省一塊錢，採購與施工就能連帶節省五塊錢。將模組排列與支架型式收斂為標準模組庫，效益在下半年即可釋放。</p>
+          <p>推動標準化，設計端每省一塊錢，採購與施工就能連帶節省五塊錢。將模組排列與支架型式收斂為標準模組庫，效益在下半年即可釋放。</p>
         </div>
         <div class="card amber">
           <h3>⚡ 鎖產能重於鎖價格</h3>
           <p>在變壓器與特高壓開關缺貨期，專案最大死因是「逾期併網被台電罰款或取消躉購資格」。與重要廠商鎖定交期配額，比死扣價格更能保證履約利潤。</p>
         </div>
         <div class="card blue">
-          <h3>🎯 考核決定跨區成敗</h3>
-          <p>北中南各區各自為政的根源在於「支援他區不計分，出事卻要背鍋」。在各區總監 KPI 中加入跨區支援權重，制度理順，資源自然流動。</p>
+          <h3>🎯 報價單嚴格植入有效期</h3>
+          <p>成本海嘯期絕不允許無期限報價單在市場流通。所有報價單必須明定「30 天有效，逾期重新核算」，並載明鋼銅物價連動條款，鎖住專案底線。</p>
         </div>
       </div>
     </div>
     <div class="slide-foot">
-      <div>來源：總經理營運目標 ｜ 簡報第 4 頁雙軌突圍路線圖</div>
-      <div class="pageno">1.2</div>
+      <div>來源：核心決策問題分類 ｜ 營運目標與工程標準化對照</div>
+      <div class="pageno">3.2</div>
     </div>
   </section>
 
-  <!-- P1.3 -->
+  <!-- P3.3 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 1 · 五角色提問 1.3</div>
-        <h1>三、獨立董事視角：治理、揭露、法遵與內控防線（Q1–Q5）</h1>
-        <p class="sub">獨立董事為股東與法遵把關：未經查證的外部數據如何進入決策？農地農業事實不足是否引發撤照？策略夥伴高度集中是否存在供應鏈斷鏈風險？</p>
+        <div class="eyebrow">Part 3 · 核心決策問題分類 3.3</div>
+        <h1>問題領域三：一地兩用治理、成敗錨點與法遵合規決策（Q12–Q16）</h1>
+        <p class="sub">直面一地兩用結構性挑戰：成敗押在農漁團隊的風險誰承擔？農用事實不足如何防範撤照？前期沉沒成本誰吸收？如何防範無約暴露？是否重定義為場域整合商？</p>
       </div>
       <div class="flags">
-        <span class="flag coral">數據分級治理</span>
-        <span class="flag amber">三情境敏感度</span>
-        <span class="flag blue">供應鏈集中度</span>
-      </div>
-    </div>
-    <div class="slide-body">
-      <div class="split-img-left">
-        <!-- SVG Supplier Concentration Matrix -->
-        <div class="fig">
-          <div class="figtitle">獨立董事：七類關鍵設備供應商集中度與第二來源分級</div>
-          <svg viewBox="0 0 520 280" role="img" aria-label="供應商分級矩陣">
-            <!-- Quadrants -->
-            <rect x="50" y="30" width="215" height="110" fill="#FBEAE5" stroke="#D95F45" stroke-width="1.5" opacity=".6"/>
-            <rect x="265" y="30" width="215" height="110" fill="#FBEAE5" stroke="#D95F45" stroke-width="2"/>
-            <rect x="50" y="140" width="215" height="110" fill="#E8F1F9" stroke="#1968AD" stroke-width="1.5"/>
-            <rect x="265" y="140" width="215" height="110" fill="#FCF2DE" stroke="#E09A2B" stroke-width="1.5"/>
-
-            <text x="265" y="22" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle">供應鏈替換難度 (交期/規格特殊性) ➡</text>
-            <text x="25" y="140" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle" transform="rotate(-90 25 140)">金額佔比 ➡</text>
-
-            <!-- High Risk: Transformer, Substation -->
-            <circle cx="410" cy="65" r="22" fill="#D95F45"/>
-            <text x="410" y="70" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">變壓器</text>
-            <circle cx="330" cy="80" r="20" fill="#D95F45"/>
-            <text x="330" y="85" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">升壓站</text>
-            <text x="370" y="125" fill="#b4432c" font-size="10.5" font-weight="800" text-anchor="middle">🚨 絕對致命：必須建立第二來源！</text>
-
-            <!-- High Value Standard: Module, Inverter -->
-            <circle cx="150" cy="75" r="24" fill="#1968AD"/>
-            <text x="150" y="80" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">光電模組</text>
-            <circle cx="190" cy="100" r="18" fill="#1968AD"/>
-            <text x="190" y="105" fill="#fff" font-size="10.5" font-weight="800" text-anchor="middle">逆變器</text>
-
-            <!-- Low Value Commodities: Racking, Cables, Piles -->
-            <circle cx="120" cy="190" r="16" fill="#1BB1BF"/>
-            <text x="120" y="195" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">支架</text>
-            <circle cx="170" cy="180" r="16" fill="#1BB1BF"/>
-            <text x="170" y="185" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">基樁</text>
-            <circle cx="340" cy="190" r="18" fill="#E09A2B"/>
-            <text x="340" y="195" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">線材/盤體</text>
-
-            <rect x="50" y="255" width="430" height="20" fill="#fff" stroke="#D9E3EC"/>
-            <text x="265" y="269" fill="#5B7285" font-size="10" text-anchor="middle">內控建議：長交期高價值物料強制啟動合格備援商名冊 (2nd Source)</text>
-          </svg>
-          <div class="cap">▲ 關鍵料件分級管理：長交期設備杜絕單一供應商鎖死</div>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>問題</th>
-                <th>A1 立場與代價</th>
-                <th>A2 立場與代價</th>
-                <th>A3 立場與代價</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b>Q1 政策數字查證可靠度</b><br><small style="color:var(--muted)">決策資料來源管理</small></td>
-                <td><b>建立資料三級分級制 (推薦)</b>：標註官方/轉述/推估。<br><small style="color:var(--coral)">代價：簡報工時增，無法引無來源驚悚數字。</small></td>
-                <td><b>按用途分級</b>：僅進董事會與募資需逐筆審核。<br><small style="color:var(--coral)">代價：多版本管理混亂，未核版本恐外流事故。</small></td>
-                <td><b>查核責任外部化</b>：聘外部顧問出具數據意見書。<br><small style="color:var(--coral)">代價：費用高時間長，內部失去數字敏銳度。</small></td>
-              </tr>
-              <tr class="hl-row">
-                <td><b>Q2 成本上漲敏感度分析</b><br><small style="color:var(--muted)">預估基礎與毛利缺口</small></td>
-                <td><b>要求三情境敏感度分析 (推薦)</b>：樂觀/基準/悲觀推演。<br><small style="color:var(--coral)">代價：假設本身仍是判斷，需採購財務工時。</small></td>
-                <td><b>在手案逐案成本重估</b>：算出現實毛利缺口。<br><small style="color:var(--coral)">代價：只看後照鏡，對未來三年新案無預測力。</small></td>
-                <td><b>建立銅鋼指數預警指標</b>：破觸發值啟動調價。<br><small style="color:var(--coral)">代價：被動應變，無法支援五年計畫預算編製。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q3 一地二用法遵風險</b><br><small style="color:var(--muted)">農業事實不足與撤照防範</small></td>
-                <td><b>設立獨立法遵查核機制</b>：實地勘驗留存耕作事實。<br><small style="color:var(--coral)">代價：增加稽核成本，被前線業務視為干擾。</small></td>
-                <td><b>合約與保險全額轉嫁</b>：違約由農漁團隊賠償。<br><small style="color:var(--coral)">代價：對方多為小本經營，實務求償金額極低。</small></td>
-                <td><b>策略性收斂複合型態 (推薦)</b>：只做主管機關核准前例充足者。<br><small style="color:var(--coral)">代價：放棄新創型態超額報酬，案源受限。</small></td>
-              </tr>
-              <tr class="hl-row">
-                <td><b>Q4 無約或弱約狀態盤點</b><br><small style="color:var(--muted)">前期投入的法律暴露</small></td>
-                <td><b>全面盤點暴露金額 (推薦)</b>：清查所有進行中案件合約。<br><small style="color:var(--coral)">代價：揭露靠人情推進無約黑數，引發管理陣痛。</small></td>
-                <td><b>不咎既往，嚴管新案</b>：新案未簽約不得投資源。<br><small style="color:var(--coral)">代價：既有暴露完全未解，爆發爭議仍需認賠。</small></td>
-                <td><b>合約納入系統放行門檻</b>：未附合約無法請購設計。<br><small style="color:var(--coral)">代價：法務審查塞車，前線可能私下繞道推進。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q5 供應商集中度風險</b><br><small style="color:var(--muted)">「門當戶對」夥伴安全嗎</small></td>
-                <td><b>建立第二來源 (2nd Source)</b>：每類備援一家。<br><small style="color:var(--coral)">代價：驗證費用高，採購量分散削弱主力議價力。</small></td>
-                <td><b>維持集中以換取優先配額</b>：要求夥伴財務透明。<br><small style="color:var(--coral)">代價：過度依賴單一對象，夥伴爆雷無緩衝期。</small></td>
-                <td><b>按關鍵性分級處理 (推薦)</b>：長交期變壓器備援，支架維持集中。<br><small style="color:var(--coral)">代價：機制維護繁瑣，需定期滾動調整等級。</small></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="three-col" style="margin-top:6px">
-        <div class="card coral">
-          <h3>⚖️ 資料分級防範法律責任</h3>
-          <p>獨立董事最在意的就是內部數字能否經得起外部檢驗。建立「官方公告／媒體報導／內部推估」標籤，才能杜絕在年報或法說會出現不實陳述。</p>
-        </div>
-        <div class="card amber">
-          <h3>🌾 農業事實是致命撤照地雷</h3>
-          <p>農電與漁電案場若被主管機關判定「無農業生產事實」，最嚴重將被撤銷容許並廢止電業執照。法遵查核絕不能由背負接單業績壓力的業務兼任。</p>
-        </div>
-        <div class="card teal">
-          <h3>📑 無約盤點是防護第一步</h3>
-          <p>前期申設、出圖與地方溝通動輒數十至上百萬，若僅憑業務個人關係承諾而無具約束力 MOU，一旦破局即成呆帳。盤點黑數是董事會今日責任。</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide-foot">
-      <div>來源：獨立董事治理檢核標準 ｜ 公司治理法遵指引</div>
-      <div class="pageno">1.3</div>
-    </div>
-  </section>
-
-  <!-- P1.4 -->
-  <section class="slide">
-    <div class="slide-header">
-      <div>
-        <div class="eyebrow">Part 1 · 五角色提問 1.4</div>
-        <h1>四、外部企業顧問視角：市場結構、商業模式與終局思維（Q1–Q5）</h1>
-        <p class="sub">顧問直指商業本質：在標準化市場中純 EPC 會不會被兩端夾殺？進能服相較同業的真實護城河在哪？2029 年回頭看最可能後悔沒做的是什麼？</p>
-      </div>
-      <div class="flags">
-        <span class="flag purple">終局思維</span>
-        <span class="flag blue">真實差異化</span>
-        <span class="flag coral">利潤防衛戰</span>
-      </div>
-    </div>
-    <div class="slide-body">
-      <div class="split-img-right">
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>問題</th>
-                <th>A1 立場與代價</th>
-                <th>A2 立場與代價</th>
-                <th>A3 立場與代價</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><b>Q1 進能服真實差異化</b><br><small style="color:var(--muted)">屋頂優先下的核心護城河</small></td>
-                <td><b>跨區同步交付能力</b>：北中南實體據點服務連鎖製造大廠。<br><small style="color:var(--coral)">代價：跨區協調若名實不符，大案交付失敗傷害更大。</small></td>
-                <td><b>維運數據驅動設計 (推薦)</b>：發電實測與故障庫優化次案回報率。<br><small style="color:var(--coral)">代價：數據清洗需時間累積，短期易淪行銷口號。</small></td>
-                <td><b>承認無結構差異</b>：三年內在特定產業打極致成本。<br><small style="color:var(--coral)">代價：選定等於放棄其他方向，建設期長達三年。</small></td>
-              </tr>
-              <tr class="hl-row">
-                <td><b>Q2 價值鏈位移與 EPC 夾殺</b><br><small style="color:var(--muted)">利潤最終會沉澱在誰手中</small></td>
-                <td><b>價值往上游開發權移動</b>：自建饋線與土地案源庫存。<br><small style="color:var(--coral)">代價：開發為長週期負現金流，資金耐受要求高。</small></td>
-                <td><b>價值往下游維運售電移動 (推薦)</b>：以工程為入口綁定 20 年收益。<br><small style="color:var(--coral)">代價：下游對手皆為重金機構，需提升資產管理能力。</small></td>
-                <td><b>價值仍在 EPC 極致規模者</b>：贏者通吃壓低單位成本。<br><small style="color:var(--coral)">代價：要求持續巨額擴張，一旦落後即出局。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q3 公司定位身分重定義</b><br><small style="color:var(--muted)">場域整合商 vs 純工程公司</small></td>
-                <td><b>重定義為「場域整合商」</b>：整合農漁、土地、資金與工程。<br><small style="color:var(--coral)">代價：文化重塑極難，以工程為榮的核心員工恐流失。</small></td>
-                <td><b>守住工程本位</b>：整合交給專業開發商，進能服只接單。<br><small style="color:var(--coral)">代價：永遠被壓價，在緊縮期淪為隨時可換的代工廠。</small></td>
-                <td><b>設獨立主體承載整合 (推薦)</b>：工程本業維持，另設合資專案主體。<br><small style="color:var(--coral)">代價：關係人交易與治理複雜度提升，內部爭搶資源。</small></td>
-              </tr>
-              <tr class="hl-row">
-                <td><b>Q4 2027–2029 顛覆性變數</b><br><small style="color:var(--muted)">重寫遊戲規則的外在力量</small></td>
-                <td><b>儲能與電力交易成熟</b>：案場轉向收益最佳化模型。<br><small style="color:var(--coral)">代價：需新電力電子技術，早期投入恐押錯路線。</small></td>
-                <td><b>AI 資料中心強烈綠電需求 (推薦)</b>：重構高品質客戶層級。<br><small style="color:var(--coral)">代價：資安與合規標準遠高製造業，短期恐未達標。</small></td>
-                <td><b>躉購費率實質下調</b>：現有專案財務模型全面失效。<br><small style="color:var(--coral)">代價：完全在控制外，過度保守或樂觀皆可能重創。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q5 2029 回頭看最後悔什麼</b><br><small style="color:var(--muted)">站在三年後的遺憾預演</small></td>
-                <td><b>後悔沒建立自有案源庫存 (推薦)</b>：三年後議價力仍在人手。<br><small style="color:var(--coral)">代價：短期零營收，在成本壓力期最容易被腰斬。</small></td>
-                <td><b>後悔沒將數據全面數位化</b>：成熟期想抓效率已無時間。<br><small style="color:var(--coral)">代價：IT 投資回報難以單獨歸因，推行阻力極大。</small></td>
-                <td><b>後悔沒早砍虧損區域業務</b>：成長掩蓋消耗，浪費資金。<br><small style="color:var(--coral)">代價：收業務傷人傷感情，且需精確分區損益資料。</small></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="fig">
-          <div class="figtitle">簡報第 6 頁原圖：2026/Q1 - 2027 成本波動展望與利潤防衛戰</div>
-          <img src="assets/slide_6_img_2.png" alt="成本波動展望瀑布圖">
-          <div class="cap">▲ 瀑布圖：基準毛利 ➡ 成本侵蝕 (線材+15%、變壓器+10%、鋼構+10%) ➡ 採購與工程防禦 ➡ 目標毛利</div>
-        </div>
-      </div>
-      <div class="three-col" style="margin-top:6px">
-        <div class="card purple">
-          <h3>🔮 2029 年的真正遺憾</h3>
-          <p>若 2027–2029 年只忙著做別人轉包的工程，三年後市場總量放緩時，進能服將毫無議價權。擁有「自有土地開發權、饋線位置與維運合約」才是穿越週期的硬資產。</p>
-        </div>
-        <div class="card blue">
-          <h3>⚡ AI 算力資料中心是超級槓桿</h3>
-          <p>台灣 2026 供需報告預測用電年均增長 2.5%，資料中心申請量暴增。這類客戶需要 161kV 特高壓穩定電力與充裕綠電，是進能服從屋頂跨入高階能源服務的最佳跳板。</p>
-        </div>
-        <div class="card coral">
-          <h3>📉 警惕瀑布圖的理想化假定</h3>
-          <p>簡報中的利潤防衛戰瀑布圖假定「採購鎖價」與「設計標準化」能百分之百抵銷成本海嘯。顧問提醒：若不改變合約結構，單純靠工程節省只是一廂情願。</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide-foot">
-      <div>來源：外部顧問策略對話 ｜ 簡報第 6 頁利潤防衛瀑布圖</div>
-      <div class="pageno">1.4</div>
-    </div>
-  </section>
-
-  <!-- P1.5 -->
-  <section class="slide">
-    <div class="slide-header">
-      <div>
-        <div class="eyebrow">Part 1 · 五角色提問 1.5</div>
-        <h1>五、事業部主管視角：現場執行、通路開拓與跨區落地（Q1–Q5）</h1>
-        <p class="sub">第一線事業部的現實考量：建築師與營造廠通路如何打通？在手未簽約案成本暴漲如何處置？跨區協調會決議為何一再淪為空談？</p>
-      </div>
-      <div class="flags">
-        <span class="flag blue">新建廠房通路</span>
-        <span class="flag amber">未簽約案定價</span>
-        <span class="flag coral">跨區落地責任</span>
-      </div>
-    </div>
-    <div class="slide-body">
-      <div class="split-img-left">
-        <!-- SVG Building Architect Channel Flow -->
-        <div class="fig">
-          <div class="figtitle">事業部主管：新建廠房早期切入與建築師合作流程圖</div>
-          <svg viewBox="0 0 520 280" role="img" aria-label="建築師合作流程">
-            <rect x="20" y="30" width="135" height="70" rx="5" fill="#E8F1F9" stroke="#1968AD" stroke-width="2"/>
-            <text x="87" y="55" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle">① 概念規劃期</text>
-            <text x="87" y="73" fill="#5B7285" font-size="10.5" text-anchor="middle">建築師事務所接案</text>
-            <text x="87" y="88" fill="#1968AD" font-size="10" font-weight="700" text-anchor="middle">★ 進能服免費出圖支援</text>
-
-            <rect x="190" y="30" width="135" height="70" rx="5" fill="#E2F5F7" stroke="#1BB1BF" stroke-width="2"/>
-            <text x="257" y="55" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle">② 圖說送審期</text>
-            <text x="257" y="73" fill="#5B7285" font-size="10.5" text-anchor="middle">載重與預埋孔道規格</text>
-            <text x="257" y="88" fill="#12818C" font-size="10" font-weight="700" text-anchor="middle">綁定特定規格標準</text>
-
-            <rect x="360" y="30" width="140" height="70" rx="5" fill="#FCF2DE" stroke="#E09A2B" stroke-width="2"/>
-            <text x="430" y="55" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle">③ 營造發包期</text>
-            <text x="430" y="73" fill="#5B7285" font-size="10.5" text-anchor="middle">營造廠統包招標</text>
-            <text x="430" y="88" fill="#9a6a10" font-size="10" font-weight="700" text-anchor="middle">指定光電配合廠商</text>
-
-            <path d="M155 65 L190 65 M325 65 L360 65" stroke="#1968AD" stroke-width="2.5" fill="none"/>
-
-            <rect x="50" y="130" width="420" height="65" rx="5" fill="#0C3A63"/>
-            <text x="260" y="156" fill="#fff" font-size="13" font-weight="800" text-anchor="middle">今日授權事項一：建立專屬「通路分潤機制」</text>
-            <text x="260" y="176" fill="#8FD9E4" font-size="11" text-anchor="middle">提撥早期結盟行銷預算，以顧問費或分潤回饋建築師與統包營造廠</text>
-
-            <rect x="50" y="210" width="420" height="50" rx="4" fill="#FBEAE5" stroke="#D95F45" stroke-width="1.5"/>
-            <text x="260" y="232" fill="#b4432c" font-size="11.5" font-weight="800" text-anchor="middle">現場警訊：等到廠房完工才去敲門，光電已無預留孔位，成本翻倍</text>
-            <text x="260" y="248" fill="#5B7285" font-size="10" text-anchor="middle">必須在前置規劃階段介入，將光電支架載重納入結構技師計算書</text>
-          </svg>
-          <div class="cap">▲ 通路前置化：透過早期技術介入與分潤機制鎖定工業區新建廠房</div>
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>問題</th>
-                <th>A1 立場與代價</th>
-                <th>A2 立場與代價</th>
-                <th>A3 立場與代價</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="hl-row">
-                <td><b>Q1 新建廠房通路經營</b><br><small style="color:var(--muted)">建築師與營造廠如何攻破</small></td>
-                <td><b>專人經營設計端通路</b>：提供結構預埋支援，進圖說。<br><small style="color:var(--coral)">代價：長週期前半年無業績，需改業務獎金誘因。</small></td>
-                <td><b>綁定少數大型營造廠 (推薦)</b>：簽訂排他合作協議。<br><small style="color:var(--coral)">代價：案源受制於人，對方自建團隊將瞬間斷單。</small></td>
-                <td><b>由業主 ESG 倒逼指定</b>：從總部切入要求營造廠發包。<br><small style="color:var(--coral)">代價：需高階諮詢人才，中小型工廠業主無此組織。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q2 設計 / 採購 / 業務優先序</b><br><small style="color:var(--muted)">人力有限資源先做誰</small></td>
-                <td><b>先做設計最佳化 (推薦)</b>：一省兩用，槓桿最大。<br><small style="color:var(--coral)">代價：效益在下一批新案展現，在手案毛利無救。</small></td>
-                <td><b>先做採購降本</b>：鎖量見效最快，單季反映財報。<br><small style="color:var(--coral)">代價：供應商讓利空間有頂，次年邊際效益遞減。</small></td>
-                <td><b>先做業務串聯搶量</b>：無案源其他皆空談。<br><small style="color:var(--coral)">代價：上漲期衝量恐簽下一批虧損合約成包袱。</small></td>
-              </tr>
-              <tr class="hl-row">
-                <td><b>Q3 前期申設無償成本</b><br><small style="color:var(--muted)">一地二用沉沒成本處置</small></td>
-                <td><b>要求投資方分攤前期費</b>：約定分攤與退場補償。<br><small style="color:var(--coral)">代價：競爭力下降，若同業免費公司恐出局。</small></td>
-                <td><b>公司吸收但設停損 (推薦)</b>：每案設時限與金額上限。<br><small style="color:var(--coral)">代價：實務沉沒成本愈深愈難割捨，易一延再延。</small></td>
-                <td><b>前期獨立報價顧問費</b>：以技術諮詢名目篩選客戶。<br><small style="color:var(--coral)">代價：打破市場免費慣例，後續工程優先權變弱。</small></td>
-              </tr>
-              <tr>
-                <td><b>Q4 在手已報價未簽約案</b><br><small style="color:var(--muted)">遇成本上漲時的定價處置</small></td>
-                <td><b>設定有效期嚴格重報</b>：過期自動作廢重新核價。<br><small style="color:var(--coral)">代價：舊客認為不守信用，競爭案等於主動退出。</small></td>
-                <td><b>調降規格吸收成本</b>：總價不變，換副牌料件。<br><small style="color:var(--coral)">代價：損害長期發電績效，日後糾紛侵蝕信譽。</small></td>
-                <td><b>策略價值分類處理 (推薦)</b>：指標案吸收，一般案重報。<br><small style="color:var(--coral)">代價：標準易被業務濫用，內部討價還價內耗。</small></td>
-              </tr>
-              <tr class="hl-row">
-                <td><b>Q5 跨區月會決議落地</b><br><small style="color:var(--muted)">決議常淪空談的真正病因</small></td>
-                <td><b>單一究責人與明確期限 (推薦)</b>：追蹤未結項目。<br><small style="color:var(--coral)">代價：會議氣氛直白緊繃，需高階長期支持施壓。</small></td>
-                <td><b>下放個案協調</b>：會議只審跨區資源仲裁。<br><small style="color:var(--coral)">代價：工作層級授權不足時個案全卡死在基層。</small></td>
-                <td><b>先統一共同數據</b>：杜絕各區各說各話。<br><small style="color:var(--coral)">代價：資料治理耗時一年，短期會議品質難改善。</small></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="three-col" style="margin-top:6px">
-        <div class="card blue">
-          <h3>🏗️ 抓準建築師的痛點</h3>
-          <p>建築師最怕送建照時才發現屋頂載重不足需結構重審。進能服在規劃期免費提供結構技師簽證的「光電整合模組圖」，是最高性價比的通路進攻戰術。</p>
-        </div>
-        <div class="card coral">
-          <h3>🛑 設立前期停損點 (Stop-loss Gate)</h3>
-          <p>今日授權事項二明確拍板：一地二用案場前期作業若超過 90 天未取得關鍵地政或地方同意，強制啟動停損審查，禁止各區持續投入現場人力。</p>
-        </div>
-        <div class="card teal">
-          <h3>📋 會議決議必須「指名道姓」</h3>
-          <p>跨區協調會不能再以「請北區多支援南區」作結。每項跨區支援必須載明支援工程師姓名、借調天數、交接標準與完成期限，下次會議逐項對表。</p>
-        </div>
-      </div>
-    </div>
-    <div class="slide-foot">
-      <div>來源：各區事業部主管第一線回饋 ｜ 跨區協調會議檢討紀錄</div>
-      <div class="pageno">1.5</div>
-    </div>
-  </section>
-
-</div>
-
-<!-- ================= PART 2: 策略架構對照 ================= -->
-<div class="view" id="view-p2">
-
-  <!-- P2.1 -->
-  <section class="slide">
-    <div class="slide-header">
-      <div>
-        <div class="eyebrow">Part 2 · 策略架構對照 2.1</div>
-        <h1>簡報策略 × David 四原則之深度檢驗</h1>
-        <p class="sub">以 David 的四大底層決策原則（少而精、先規劃後執行、脈絡複利、決策權在人）嚴格檢驗簡報策略，揪出關鍵的結構性矛盾。</p>
-      </div>
-      <div class="flags">
-        <span class="flag coral">少而精抵觸</span>
-        <span class="flag green">規劃先於執行</span>
-        <span class="flag coral">決策權外包矛盾</span>
+        <span class="flag coral">成敗錨點收回</span>
+        <span class="flag amber">農業事實法遵</span>
+        <span class="flag blue">前期停損 MOU</span>
       </div>
     </div>
     <div class="slide-body">
       <div class="split-img-left">
         <!-- SVG Governance Contradiction Diagram -->
         <div class="fig">
-          <div class="figtitle">David 原則檢驗：地面軌「決策權外包」之致命結構矛盾</div>
+          <div class="figtitle">一地兩用成敗錨點收回架構（自建最小可行能力）</div>
           <svg viewBox="0 0 520 280" role="img" aria-label="決策權外包矛盾圖">
             <!-- Left: False Model -->
             <rect x="20" y="30" width="225" height="225" rx="6" fill="#FBEAE5" stroke="#D95F45" stroke-width="2"/>
@@ -1227,7 +1269,7 @@ svg text{font-family:inherit}
             <rect x="40" y="70" width="185" height="40" rx="4" fill="#fff" stroke="#D95F45"/>
             <text x="132" y="94" fill="#12293D" font-size="11.5" font-weight="700" text-anchor="middle">進能服承擔：重資本與工期</text>
 
-            <path d="M132 110 L132 135" stroke="#D95F45" stroke-width="2" marker-end="url(#ar1)"/>
+            <path d="M132 110 L132 135" stroke="#D95F45" stroke-width="2"/>
 
             <rect x="40" y="135" width="185" height="50" rx="4" fill="#0C3A63"/>
             <text x="132" y="157" fill="#8FD9E4" font-size="11" font-weight="800" text-anchor="middle">成敗錨點交給：</text>
@@ -1238,7 +1280,7 @@ svg text{font-family:inherit}
 
             <!-- Right: True Model -->
             <rect x="275" y="30" width="225" height="225" rx="6" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
-            <text x="387" y="55" fill="#2E7D32" font-size="13" font-weight="800" text-anchor="middle">✅ David 修正方案 (自建護城河)</text>
+            <text x="387" y="55" fill="#2E7D32" font-size="13" font-weight="800" text-anchor="middle">✅ 修正方案 (自建護城河)</text>
             <rect x="295" y="70" width="185" height="40" rx="4" fill="#fff" stroke="#2E7D32"/>
             <text x="387" y="94" fill="#12293D" font-size="11.5" font-weight="700" text-anchor="middle">自建 1~2 自有場最小營運能力</text>
 
@@ -1258,40 +1300,322 @@ svg text{font-family:inherit}
           <table>
             <thead>
               <tr>
-                <th>David 原則</th>
-                <th>簡報原始規劃之具體表現</th>
-                <th>核心判讀與深層矛盾</th>
-                <th class="ctr">相符狀態</th>
+                <th>決策核心問題</th>
+                <th>立場 A1 與必須承擔之代價</th>
+                <th>立場 A2 與必須承擔之代價</th>
+                <th>立場 A3 與必須承擔之代價 (推薦)</th>
               </tr>
             </thead>
             <tbody>
               <tr class="hl-row">
-                <td><b>少而精</b><br><small style="color:var(--muted)">集中優勢兵力</small></td>
-                <td>同時推進「屋頂雙軌 ＋ 地面雙軌 ＋ 七類供應商夥伴 ＋ 採購與工程雙防禦」。</td>
-                <td><b>抵觸最明顯的一項。</b> 未說明新增這些龐雜動作要「取代或減去」什麼。四條戰線同時鋪開，依現有跨區人力現狀，高機率淪為全部半成品。</td>
-                <td class="ctr"><span class="chip amber">⚠️ 嚴重抵觸</span></td>
+                <td><b>Q12 農漁團隊成敗風險</b><br><small style="color:var(--muted)">外部變數如何控制</small></td>
+                <td><b>成立合資公司 (JV)</b>：利益股權綁死。<br><small style="color:var(--coral)">代價：承擔農漁本業病害與勞力虧損。</small></td>
+                <td><b>嚴格替換外包機制</b>：未達標即退場。<br><small style="color:var(--coral)">代價：地方關係與作期備查使替換耗時逾年。</small></td>
+                <td><b>自建最小可行營運能力 (推薦)</b>：自有場取得真實數據。<br><small style="color:var(--coral)">代價：新領域管理成本高，3 年內純投資。</small></td>
               </tr>
-              <tr class="good-row">
-                <td><b>先規劃後執行</b><br><small style="color:var(--muted)">架構先於行動</small></td>
-                <td>雙軌架構先行確立、細節後補；第 5 頁以明確架構界定屋頂與地面之不同邏輯。</td>
-                <td><b>高度相符。</b> 雙軌框架邏輯清晰，適合作為 2027–2029 策略規劃之頂層骨架，利於後續拆解細部執行指標。</td>
-                <td class="ctr"><span class="chip green">✅ 相符</span></td>
+              <tr>
+                <td><b>Q13 農業事實法遵撤照</b><br><small style="color:var(--muted)">農地農用查核防線</small></td>
+                <td><b>設立獨立法遵查核機制 (推薦)</b>：實地勘驗耕作事實。<br><small style="color:var(--coral)">代價：增加稽核成本，被前線業務視為干擾。</small></td>
+                <td><b>合約與保險全額轉嫁</b>：違約由農漁團隊賠償。<br><small style="color:var(--coral)">代價：對方多為小本經營，實務求償金額極低。</small></td>
+                <td><b>策略性收斂成熟型態</b>：只做審查前例充足者。<br><small style="color:var(--coral)">代價：放棄新創型態超額報酬，案源受限。</small></td>
               </tr>
               <tr class="hl-row">
-                <td><b>脈絡複利</b><br><small style="color:var(--muted)">後案重用前案</small></td>
-                <td>屋頂軌與地面軌平行推進，但各自為政，兩軌間完全缺少可跨軌複用的共享中間層。</td>
-                <td>兩軌在客群、通路、風險型態與合作夥伴皆不重疊。若無共用之料件庫與數據底座，等於兩家獨立小公司各自摸索，無法產生複利。</td>
-                <td class="ctr"><span class="chip amber">⚠️ 缺少中間層</span></td>
+                <td><b>Q14 前期申設無償成本</b><br><small style="color:var(--muted)">沉沒成本誰來吸收</small></td>
+                <td><b>要求投資方分攤前期費</b>：約定退場補償。<br><small style="color:var(--coral)">代價：若同業願意免費投入，公司恐出局。</small></td>
+                <td><b>公司吸收但設停損 (推薦)</b>：每案設上限與時限。<br><small style="color:var(--coral)">代價：沉沒成本愈深愈難割捨，易一延再延。</small></td>
+                <td><b>前期獨立報價顧問費</b>：以專業服務收費篩選。<br><small style="color:var(--coral)">代價：打破市場免費慣例，後續工程優先權變弱。</small></td>
               </tr>
-              <tr class="bad-row">
-                <td><b>決策權在人</b><br><small style="color:var(--muted)">主導權留在內部</small></td>
-                <td>地面複合軌將「成敗錨點」直接交給外部配合的養殖/種植農漁團隊。</td>
-                <td><b>結構性致命矛盾！</b> 把身家性命押在自己無法指揮監督的外部人身上，等於把決策主導權實質外包。這不是執行問題，是根本的策略設計缺陷。</td>
-                <td class="ctr"><span class="chip coral">❌ 結構性矛盾</span></td>
+              <tr>
+                <td><b>Q15 無約或弱約狀態盤點</b><br><small style="color:var(--muted)">前期投入的法律暴露</small></td>
+                <td><b>全面盤點暴露金額 (推薦)</b>：清查所有進行中合約。<br><small style="color:var(--coral)">代價：揭露人情推進無約黑數，引發管理陣痛。</small></td>
+                <td><b>不咎既往，嚴管新案</b>：新案未簽約不得投資源。<br><small style="color:var(--coral)">代價：既有暴露完全未解，爆發爭議仍需認賠。</small></td>
+                <td><b>合約納入系統放行門檻</b>：未附合約無法請購設計。<br><small style="color:var(--coral)">代價：法務審查塞車，前線可能私下繞道推進。</small></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>Q16 公司身分定位重定義</b><br><small style="color:var(--muted)">場域整合商 vs 純工程</small></td>
+                <td><b>重定義為「場域整合商」</b>：整合農漁、土地、資金。<br><small style="color:var(--coral)">代價：文化重塑極難，以工程為榮員工恐流失。</small></td>
+                <td><b>守住工程本位</b>：整合交給外部專業開發商。<br><small style="color:var(--coral)">代價：永遠被壓價，緊縮期淪為隨時可換代工廠。</small></td>
+                <td><b>設獨立主體承載整合 (推薦)</b>：工程維持，另設專案公司。<br><small style="color:var(--coral)">代價：關係人交易與治理複雜度提升。</small></td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card coral">
+          <h3>⚓ 絕不把命運外包給第三方</h3>
+          <p>把成敗錨點押在農漁團隊是根本的策略錯誤。自建 1~2 個示範案場培養內部團隊，掌握實質養殖產量與水質數據，公司在談判桌上才有定價話語權。</p>
+        </div>
+        <div class="card amber">
+          <h3>📑 今日授權事項二：停損防護 MOU</h3>
+          <p>前期作業（申設、水保出圖、地方公聽會）最容易成為無底洞。今日拍板：單案前期投入達上限或逾 90 天未獲地政核准，強制啟動停損退場！</p>
+        </div>
+        <div class="card teal">
+          <h3>🌾 實地養殖事實是唯一免死金牌</h3>
+          <p>主管機關加強衛星空照與不預警抽查。全區導入工作日誌與產銷履歷認證，將養殖事實驗證標準化，徹底杜絕行政處分甚至撤照風險。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：核心決策問題分類 ｜ 一地兩用治理與法遵對照</div>
+      <div class="pageno">3.3</div>
+    </div>
+  </section>
+
+  <!-- P3.4 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 核心決策問題分類 3.4</div>
+        <h1>問題領域四：供應鏈保量鎖價、物料防衛與跨區協調決策（Q17–Q21）</h1>
+        <p class="sub">應對物料海嘯與組織內耗：關鍵夥伴集中度風險如何化解？敏感度分析如何做？跨區協調瓶頸在資源、資料還是誘因？月會決議如何真正落地？</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">供應鏈第二來源</span>
+        <span class="flag amber">成本敏感度分析</span>
+        <span class="flag blue">跨區究責落地</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-right">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>決策核心問題</th>
+                <th>立場 A1 與必須承擔之代價</th>
+                <th>立場 A2 與必須承擔之代價</th>
+                <th>立場 A3 與必須承擔之代價 (推薦)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hl-row">
+                <td><b>Q17 供應商集中度風險</b><br><small style="color:var(--muted)">「門當戶對」夥伴安全嗎</small></td>
+                <td><b>建立第二來源 (2nd Source)</b>：每類備援一家。<br><small style="color:var(--coral)">代價：驗證費用高，採購量分散削弱主力議價力。</small></td>
+                <td><b>維持集中換優先配額</b>：要求夥伴財務透明。<br><small style="color:var(--coral)">代價：過度依賴單一對象，夥伴爆雷無緩衝期。</small></td>
+                <td><b>按關鍵性分級處理 (推薦)</b>：變壓器備援，支架維持集中。<br><small style="color:var(--coral)">代價：機制維護繁瑣，需定期滾動調整等級。</small></td>
+              </tr>
+              <tr>
+                <td><b>Q18 成本敏感度分析基礎</b><br><small style="color:var(--muted)">線材+15% 變壓器+10% 鋼構+10%</small></td>
+                <td><b>要求三情境分析 (推薦)</b>：樂觀/基準/悲觀推演。<br><small style="color:var(--coral)">代價：假設本身仍是判斷，需採購財務工時。</small></td>
+                <td><b>在手案逐案成本重估</b>：算出現實毛利缺口。<br><small style="color:var(--coral)">代價：只看後照鏡，對未來三年新案無預測力。</small></td>
+                <td><b>建立銅鋼指數預警</b>：破觸發值啟動調價條款。<br><small style="color:var(--coral)">代價：被動應變，無法支援五年計畫預算編製。</small></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>Q19 跨區協調瓶頸重編</b><br><small style="color:var(--muted)">北中南資源調度卡死</small></td>
+                <td><b>打散重編為功能中心</b>：設計採購總部收回。<br><small style="color:var(--coral)">代價：區域主管抵抗強，前線反應速度短期下滑。</small></td>
+                <td><b>維持架構但統一數據</b>：掌握即時進度成本。<br><small style="color:var(--coral)">代價：資料建置期長，未來一年協調依舊卡頓。</small></td>
+                <td><b>考核引入跨區支援誘因 (推薦)</b>：支援他區計入績效。<br><small style="color:var(--coral)">代價：無法解決總體人力不足，只是重新拆分。</small></td>
+              </tr>
+              <tr>
+                <td><b>Q20 跨區月會決議落地</b><br><small style="color:var(--muted)">決議常淪空談的真正病因</small></td>
+                <td><b>單一究責人與明確期限 (推薦)</b>：追蹤未結項目。<br><small style="color:var(--coral)">代價：會議氣氛直白緊繃，需高階長期支持施壓。</small></td>
+                <td><b>下放個案協調</b>：會議只審跨區資源仲裁。<br><small style="color:var(--coral)">代價：工作層級授權不足時個案全卡死在基層。</small></td>
+                <td><b>先統一共同數據</b>：杜絕各區各說各話。<br><small style="color:var(--coral)">代價：資料治理耗時一年，短期會議品質難改善。</small></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>Q21 成本防衛戰雙管對策</b><br><small style="color:var(--muted)">簡報瀑布圖能否守住毛利</small></td>
+                <td><b>完全依賴採購端鎖價</b>：長約集中採購壓低成本。<br><small style="color:var(--coral)">代價：在賣方市場無議價空間，供應商毀約風險高。</small></td>
+                <td><b>完全依賴工程端防禦</b>：極致優化設計工法。<br><small style="color:var(--coral)">代價：工程節省有物理極限，難敵原料雙位數暴漲。</small></td>
+                <td><b>雙管齊下＋商模升級 (推薦)</b>：保量鎖價＋合約指數轉嫁。<br><small style="color:var(--coral)">代價：需法務、採購、工程三方高度協同作業。</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- SVG Supplier Concentration Matrix -->
+        <div class="fig">
+          <div class="figtitle">七類關鍵設備供應商集中度與第二來源分級</div>
+          <svg viewBox="0 0 520 280" role="img" aria-label="供應商分級矩陣">
+            <rect x="50" y="30" width="215" height="110" fill="#FBEAE5" stroke="#D95F45" stroke-width="1.5" opacity=".6"/>
+            <rect x="265" y="30" width="215" height="110" fill="#FBEAE5" stroke="#D95F45" stroke-width="2"/>
+            <rect x="50" y="140" width="215" height="110" fill="#E8F1F9" stroke="#1968AD" stroke-width="1.5"/>
+            <rect x="265" y="140" width="215" height="110" fill="#FCF2DE" stroke="#E09A2B" stroke-width="1.5"/>
+
+            <text x="265" y="22" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle">供應鏈替換難度 (交期/規格特殊性) ➡</text>
+            <text x="25" y="140" fill="#12293D" font-size="12" font-weight="800" text-anchor="middle" transform="rotate(-90 25 140)">金額佔比 ➡</text>
+
+            <circle cx="410" cy="65" r="22" fill="#D95F45"/>
+            <text x="410" y="70" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">變壓器</text>
+            <circle cx="330" cy="80" r="20" fill="#D95F45"/>
+            <text x="330" y="85" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">升壓站</text>
+            <text x="370" y="125" fill="#b4432c" font-size="10.5" font-weight="800" text-anchor="middle">🚨 絕對致命：必須建立第二來源！</text>
+
+            <circle cx="150" cy="75" r="24" fill="#1968AD"/>
+            <text x="150" y="80" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">光電模組</text>
+            <circle cx="190" cy="100" r="18" fill="#1968AD"/>
+            <text x="190" y="105" fill="#fff" font-size="10.5" font-weight="800" text-anchor="middle">逆變器</text>
+
+            <circle cx="120" cy="190" r="16" fill="#1BB1BF"/>
+            <text x="120" y="195" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">支架</text>
+            <circle cx="170" cy="180" r="16" fill="#1BB1BF"/>
+            <text x="170" y="185" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">基樁</text>
+            <circle cx="340" cy="190" r="18" fill="#E09A2B"/>
+            <text x="340" y="195" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">線材/盤體</text>
+
+            <rect x="50" y="255" width="430" height="20" fill="#fff" stroke="#D9E3EC"/>
+            <text x="265" y="269" fill="#5B7285" font-size="10" text-anchor="middle">內控建議：長交期高價值物料強制啟動合格備援商名冊 (2nd Source)</text>
+          </svg>
+          <div class="cap">▲ 關鍵料件分級管理：長交期設備杜絕單一供應商鎖死</div>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card coral">
+          <h3>🚨 今日授權事項三：保量鎖價協議</h3>
+          <p>變壓器價格指數大漲 60%、交期長達 18 個月。今日拍板：授權採購部提前啟動 2026–2027 年關鍵物料「框架採購合約」，先鎖配額產能，再談滾動計價。</p>
+        </div>
+        <div class="card amber">
+          <h3>📊 變壓器備援供應商刻不容緩</h3>
+          <p>盤體與變壓器是案場併網的咽喉點。若單一主力供應商因產能不足延遲交貨，公司將面臨巨額逾期罰款。必須至少認證一家合格備援廠商。</p>
+        </div>
+        <div class="card blue">
+          <h3>📋 會議決議必須「指名道姓」</h3>
+          <p>跨區協調會不能再以「請北區多支援南區」作結。每項跨區支援必須載明支援工程師姓名、借調天數、交接標準與完成期限，下次會議逐項對表。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：核心決策問題分類 ｜ 供應鏈防衛與跨區協調對照</div>
+      <div class="pageno">3.4</div>
+    </div>
+  </section>
+
+  <!-- P3.5 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 3 · 核心決策問題分類 3.5</div>
+        <h1>問題領域五：市場終局思維、顛覆變數與 2029 遺憾預演（Q22–Q25）</h1>
+        <p class="sub">站在終局看今天：屋頂優先下進能服的真實差異化是什麼？2027–2029 最可能顛覆玩法的變數？決策數據可靠度如何分級？2029 年回頭看最可能後悔什麼？</p>
+      </div>
+      <div class="flags">
+        <span class="flag purple">終局思維</span>
+        <span class="flag blue">真實差異化</span>
+        <span class="flag coral">數據分級治理</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="split-img-left">
+        <div class="fig">
+          <div class="figtitle">簡報第 6 頁原圖：成本波動展望與利潤防衛戰瀑布圖</div>
+          <img src="assets/slide_6_img_2.png" alt="利潤防衛戰瀑布圖">
+          <div class="cap">▲ 瀑布圖：基準毛利 ➡ 成本侵蝕 (線材+15%、變壓器+10%、鋼構+10%) ➡ 採購與工程防禦 ➡ 目標毛利</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>決策核心問題</th>
+                <th>立場 A1 與必須承擔之代價</th>
+                <th>立場 A2 與必須承擔之代價</th>
+                <th>立場 A3 與必須承擔之代價 (推薦)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Q22 進能服真實差異化</b><br><small style="color:var(--muted)">屋頂優先下的真實壁壘</small></td>
+                <td><b>跨區同步交付能力</b>：北中南實體據點承接連鎖製造業。<br><small style="color:var(--coral)">代價：跨區協調若名實不符，大案交付失敗傷害更大。</small></td>
+                <td><b>維運數據驅動設計 (推薦)</b>：發電實測與故障庫優化次案。<br><small style="color:var(--coral)">代價：數據清洗需時間累積，短期易淪行銷語言。</small></td>
+                <td><b>承認無結構差異</b>：三年內在特定規模打極致成本。<br><small style="color:var(--coral)">代價：選定等於放棄其他方向，建設期長達三年。</small></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>Q23 2027–2029 顛覆變數</b><br><small style="color:var(--muted)">重寫遊戲規則的外在力量</small></td>
+                <td><b>儲能與電力交易成熟</b>：案場轉向收益最佳化模型。<br><small style="color:var(--coral)">代價：需新電力電子技術，早期投入恐押錯路線。</small></td>
+                <td><b>AI 資料中心強烈綠電需求 (推薦)</b>：重構高階客戶層級。<br><small style="color:var(--coral)">代價：資安與合規標準遠高製造業，短期恐未達標。</small></td>
+                <td><b>躉購費率實質下調</b>：現有專案財務模型全面失效。<br><small style="color:var(--coral)">代價：完全在控制外，過度保守或樂觀皆可能重創。</small></td>
+              </tr>
+              <tr>
+                <td><b>Q24 外部數據決策可靠度</b><br><small style="color:var(--muted)">簡報引用數據查核治理</small></td>
+                <td><b>建立資料三級分級制 (推薦)</b>：官方公告/媒體轉述/內部推估。<br><small style="color:var(--coral)">代價：簡報工時增，無法引無來源驚悚數字。</small></td>
+                <td><b>按用途分級</b>：僅進董事會與募資需逐筆審核。<br><small style="color:var(--coral)">代價：多版本管理混亂，未核版本恐外流事故。</small></td>
+                <td><b>查核責任外部化</b>：聘外部顧問出具數據意見書。<br><small style="color:var(--coral)">代價：費用高時間長，內部失去數字敏銳度。</small></td>
+              </tr>
+              <tr class="hl-row">
+                <td><b>Q25 2029 回頭看最後悔什麼</b><br><small style="color:var(--muted)">站在三年後的遺憾預演</small></td>
+                <td><b>後悔沒建自有案源庫存 (推薦)</b>：三年後議價力仍在人手。<br><small style="color:var(--coral)">代價：短期零營收，在成本壓力期最容易被腰斬。</small></td>
+                <td><b>後悔沒把數據全面數位化</b>：成熟期想抓效率已無時間。<br><small style="color:var(--coral)">代價：IT 投資回報難以單獨歸因，推行阻力極大。</small></td>
+                <td><b>後悔沒早砍虧損區域業務</b>：成長掩蓋消耗，浪費資金。<br><small style="color:var(--coral)">代價：收業務傷人傷感情，且需精確分區損益資料。</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="three-col" style="margin-top:6px">
+        <div class="card purple">
+          <h3>🔮 2029 年的真正遺憾</h3>
+          <p>若 2027–2029 年只忙著做別人轉包的工程，三年後市場總量放緩時，進能服將毫無議價權。擁有「自有土地開發權、饋線位置與維運合約」才是穿越週期的硬資產。</p>
+        </div>
+        <div class="card blue">
+          <h3>⚡ AI 算力資料中心是超級槓桿</h3>
+          <p>台灣 2026 供需報告預測用電年均增長 2.5%，資料中心申請量暴增。這類客戶需要 161kV 特高壓穩定電力與充裕綠電，是進能服從屋頂跨入高階能源服務的最佳跳板。</p>
+        </div>
+        <div class="card coral">
+          <h3>⚖️ 建立決策數據三級標籤</h3>
+          <p>內部策略簡報中的外部數字必須全面標註：「官方公告／媒體報導／內部推估」。如 5.4384 兆與 18.8GW 已證實出自 GES 現場簡報，對外引用應精準註明。</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <div>來源：核心決策問題分類 ｜ 終局思維與顛覆變數對照</div>
+      <div class="pageno">3.5</div>
+    </div>
+  </section>
+
+</div>
+<!-- ================= PART 4: DAVID 策略對照 ================= -->
+<div class="view" id="view-p4">
+
+  <!-- P4.1 -->
+  <section class="slide">
+    <div class="slide-header">
+      <div>
+        <div class="eyebrow">Part 4 · David 策略對照 4.1</div>
+        <h1>簡報策略 × David 四原則之深度檢驗</h1>
+        <p class="sub">以 David 四大底層原則（少而精、先規劃後執行、脈絡複利、決策權在人）檢驗簡報策略。地面型成敗押在外部團隊，構成根本的「決策權外包矛盾」！</p>
+      </div>
+      <div class="flags">
+        <span class="flag coral">少而精抵觸</span>
+        <span class="flag green">規劃先於執行相符</span>
+        <span class="flag coral">決策權外包致命矛盾</span>
+      </div>
+    </div>
+    <div class="slide-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>David 核心原則</th>
+              <th>簡報原始規劃之具體表現</th>
+              <th>深度判讀與深層矛盾分析</th>
+              <th class="ctr">檢驗結果</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hl-row">
+              <td><b>少而精</b><br><small style="color:var(--muted)">集中優勢兵力做減法</small></td>
+              <td>同時推進「屋頂雙軌 ＋ 地面雙軌 ＋ 七類供應商夥伴 ＋ 採購與工程雙防禦」。</td>
+              <td><b>抵觸最明顯的一項。</b> 未說明新增這些龐雜動作要「取代或放棄」什麼。四條戰線同時鋪開，依現有跨區人力現狀，極易淪為全面半成品。</td>
+              <td class="ctr"><span class="chip amber">⚠️ 嚴重抵觸</span></td>
+            </tr>
+            <tr class="good-row">
+              <td><b>先規劃後執行</b><br><small style="color:var(--muted)">頂層架構先行</small></td>
+              <td>雙軌架構先行確立、細節後補；第 5 頁以明確架構界定屋頂與地面之不同邏輯。</td>
+              <td><b>高度相符。</b> 雙軌框架邏輯清晰，適合作為 2027–2029 策略規劃之頂層骨架，利於後續拆解細部執行指標。</td>
+              <td class="ctr"><span class="chip green">✅ 相符</span></td>
+            </tr>
+            <tr class="hl-row">
+              <td><b>脈絡複利</b><br><small style="color:var(--muted)">後案重用前案資產</small></td>
+              <td>屋頂軌與地面軌平行推進，但各自為政，兩軌間完全缺少可跨軌複用的共享中間層。</td>
+              <td>兩軌在客群、通路、風險型態與合作夥伴皆不重疊。若無共用之料件庫與數據底座，等於兩家獨立小公司各自摸索，無法產生複利。</td>
+              <td class="ctr"><span class="chip amber">⚠️ 缺少中間層</span></td>
+            </tr>
+            <tr class="bad-row">
+              <td><b>決策權在人</b><br><small style="color:var(--muted)">核心主導權留內部</small></td>
+              <td>地面複合軌將「成敗錨點」直接交給外部配合的養殖/種植農漁團隊。</td>
+              <td><b>結構性致命矛盾！</b> 把身家性命押在自己無法指揮監督的外部人身上，等於把決策主導權實質外包。這不是執行問題，是根本的策略設計缺陷。</td>
+              <td class="ctr"><span class="chip coral">❌ 結構性矛盾</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="three-col" style="margin-top:6px">
         <div class="card amber">
@@ -1309,23 +1633,23 @@ svg text{font-family:inherit}
       </div>
     </div>
     <div class="slide-foot">
-      <div>來源：David 四原則檢驗 ｜ 《政府能源政策跟進能服的策略討論》</div>
-      <div class="pageno">2.1</div>
+      <div>來源：David 四原則檢驗 ｜ 策略研討底層檢核矩陣</div>
+      <div class="pageno">4.1</div>
     </div>
   </section>
 
-  <!-- P2.2 -->
+  <!-- P4.2 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 2 · 策略架構對照 2.2</div>
+        <div class="eyebrow">Part 4 · David 策略對照 4.2</div>
         <h1>兩軸定位檢驗：簡報策略漏了哪三格？</h1>
-        <p class="sub">以 David 兩軸坐標（縱軸：組織階層 1.0~4.0 × 橫軸：價值鏈 1~9）拆解簡報內容，立刻暴露出策略規劃中跳過的致命空白。</p>
+        <p class="sub">以 David 兩軸坐標（縱軸：組織階層 1.0~4.0 × 橫軸：價值鏈 1~9）拆解簡報內容，暴露出跳過「6 場域經濟」、「7 產品方案」，且「4.6 運維管理」完全缺席！</p>
       </div>
       <div class="flags">
         <span class="flag blue">縱軸：2.2 事業經營</span>
-        <span class="flag coral">橫軸缺席：6 場域經濟</span>
-        <span class="flag coral">縱橫缺席：4.6 運維管理</span>
+        <span class="flag coral">橫軸跳過：6 場域經濟</span>
+        <span class="flag coral">縱橫盲區：4.6 運維管理</span>
       </div>
     </div>
     <div class="slide-body">
@@ -1351,7 +1675,6 @@ svg text{font-family:inherit}
             <rect x="15" y="70" width="50" height="55" fill="#1968AD" rx="3"/>
             <text x="40" y="98" fill="#fff" font-size="10" font-weight="800" text-anchor="middle">2.2<tspan x="40" dy="13">事業經營</tspan></text>
 
-            <!-- Cells for 2.2 -->
             <rect x="70" y="70" width="120" height="55" fill="#E8F1F9" stroke="#1968AD" stroke-width="1.5"/>
             <text x="130" y="102" fill="#1968AD" font-size="10.5" font-weight="800" text-anchor="middle">✅ 簡報核心立足點</text>
 
@@ -1370,7 +1693,6 @@ svg text{font-family:inherit}
             <rect x="360" y="70" width="60" height="55" fill="#E8F1F9" stroke="#1968AD" stroke-width="1.5"/>
             <text x="390" y="102" fill="#1968AD" font-size="10" font-weight="800" text-anchor="middle">8 找案源</text>
 
-            <!-- Arrow skipping -->
             <path d="M245 85 Q300 55 360 85" stroke="#D95F45" stroke-width="3" fill="none" stroke-dasharray="4,4"/>
             <text x="300" y="60" fill="#D95F45" font-size="9" font-weight="800" text-anchor="middle">直接跳到案源！</text>
 
@@ -1447,22 +1769,22 @@ svg text{font-family:inherit}
     </div>
     <div class="slide-foot">
       <div>來源：David 組織價值鏈兩軸坐標 ｜ 《維運月會-行動追蹤表》(2026-08-18)</div>
-      <div class="pageno">2.2</div>
+      <div class="pageno">4.2</div>
     </div>
   </section>
 
-  <!-- P2.3 -->
+  <!-- P4.3 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 2 · 策略架構對照 2.3</div>
+        <div class="eyebrow">Part 4 · David 策略對照 4.3</div>
         <h1>以「脈絡複利」重看五大行動線：誰是消耗？誰在滾動？</h1>
-        <p class="sub">David 的脈絡複利原則宣告：一次性的產出價值極低，優先做能被下一案重複使用的資產。簡報篇幅與複利價值的諷刺背離。</p>
+        <p class="sub">David 脈絡複利原則宣告：一次性的產出價值極低，優先做能被下一案重複使用的資產。簡報投入最多篇幅的複利最低，複利最高的運維完全缺席！</p>
       </div>
       <div class="flags">
         <span class="flag green">運維數據最高複利</span>
-        <span class="flag coral">人脈串聯零複利</span>
-        <span class="flag blue">設計標準化高槓桿</span>
+        <span class="flag coral">業務人脈零複利</span>
+        <span class="flag blue">設計標準化強複利</span>
       </div>
     </div>
     <div class="slide-body">
@@ -1552,20 +1874,19 @@ svg text{font-family:inherit}
     </div>
     <div class="slide-foot">
       <div>來源：David 脈絡複利架構 ｜ 運維管理數據價值分析</div>
-      <div class="pageno">2.3</div>
+      <div class="pageno">4.3</div>
     </div>
   </section>
 
 </div>
+<!-- ================= PART 5: 調整方向與今日授權 ================= -->
+<div class="view" id="view-p5">
 
-<!-- ================= PART 3: 調整方向與今日授權 ================= -->
-<div class="view" id="view-p3">
-
-  <!-- P3.1 -->
+  <!-- P5.1 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 3 · 調整方向與授權 3.1</div>
+        <div class="eyebrow">Part 5 · 調整方向與授權 5.1</div>
         <h1>三個可選的策略調整方向（A / B / C 方案比較）</h1>
         <p class="sub">策略沒有完美的解法，只有代價的權衡。為 2027–2029 會議梳理出三個清晰可選的方向，代價全數攤開，拍板權在 David 與經營層。</p>
       </div>
@@ -1637,15 +1958,15 @@ svg text{font-family:inherit}
     </div>
     <div class="slide-foot">
       <div>來源：2027–2029 策略會調整方案 ｜ A/B/C 三方案對比</div>
-      <div class="pageno">3.1</div>
+      <div class="pageno">5.1</div>
     </div>
   </section>
 
-  <!-- P3.2 -->
+  <!-- P5.2 -->
   <section class="slide">
     <div class="slide-header">
       <div>
-        <div class="eyebrow">Part 3 · 調整方向與授權 3.2</div>
+        <div class="eyebrow">Part 5 · 調整方向與授權 5.2</div>
         <h1>高階決策儀表板：今日授權事項與查核依據</h1>
         <p class="sub">經營層跨區月會今日拍板之三大授權議程，將策略方針化為第一線具備法律與預算依據的實質行動，並附完整查核文獻庫。</p>
       </div>
@@ -1729,15 +2050,15 @@ svg text{font-family:inherit}
             </tr>
             <tr>
               <td class="ctr">4</td>
-              <td><b>經濟部新聞發布</b>｜台灣離岸風電完成 500 座風力機</td>
-              <td>2026-06-15</td>
-              <td>2025 年單年新增容量全球第 3、累計全球第 5</td>
+              <td><b>經濟部能源署官方研討會簡報</b>｜能源轉型策略與進展多元、安全與韌性</td>
+              <td>2026-08-24</td>
+              <td>太陽光電 16GW 累計、AIDC 區位引導共址共構、PUE≤1.3 強制審查</td>
             </tr>
             <tr>
               <td class="ctr">5</td>
-              <td><b>經濟部綠能科技產業推動中心</b>｜綠能發展現況統計</td>
-              <td>2026-06 資料</td>
-              <td>再生能源累計 24,317 MW；太陽光電推估約 16 GW (13倍)</td>
+              <td><b>今周刊新能源論壇簡報</b>｜能源轉型最後一哩路：如何跨越綠能的社會接受度？</td>
+              <td>2026-08-24</td>
+              <td>志光 85MW 漁電共生 40% 遮蔽率、大亞 240MW 信任模型、0403 地震 510MW 儲能救援</td>
             </tr>
             <tr>
               <td class="ctr">6</td>
@@ -1755,20 +2076,19 @@ svg text{font-family:inherit}
               <td class="ctr">8</td>
               <td><b>內部會議簡報原件</b>｜《政府能源政策跟進能服的策略討論_20260908.pptx》</td>
               <td>2026-09-08</td>
-              <td>簡報投影片第 1 至 7 頁完整文字與原圖</td>
+              <td>簡報投影片第 1 至 7 頁完整文字、物料漲幅矩陣與原圖</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
     <div class="slide-foot">
-      <div>來源：簡報第 7 頁決策儀表板 ｜ 12 筆官方查核出處全量備查</div>
-      <div class="pageno">3.2</div>
+      <div>來源：簡報第 7 頁決策儀表板 ｜ 完整官方查核出處全量備查</div>
+      <div class="pageno">5.2</div>
     </div>
   </section>
 
 </div>
-
 <!-- ================= BOTTOM CONTROLS ================= -->
 <div class="deckbar" id="deckbar">
   <div class="progress"><div class="fill" id="progressFill"></div></div>
@@ -1784,20 +2104,22 @@ svg text{font-family:inherit}
 <script>
 (function(){
   var parts = {
-    p0: [].slice.call(document.querySelectorAll('#view-p0 .slide')),
     p1: [].slice.call(document.querySelectorAll('#view-p1 .slide')),
     p2: [].slice.call(document.querySelectorAll('#view-p2 .slide')),
-    p3: [].slice.call(document.querySelectorAll('#view-p3 .slide'))
+    p3: [].slice.call(document.querySelectorAll('#view-p3 .slide')),
+    p4: [].slice.call(document.querySelectorAll('#view-p4 .slide')),
+    p5: [].slice.call(document.querySelectorAll('#view-p5 .slide'))
   };
-  var order = ['p0','p1','p2','p3'];
+  var order = ['p1','p2','p3','p4','p5'];
   var state = { view:'home', idx:0 };
-  var last = { p0:0, p1:0, p2:0, p3:0 };
+  var last = { p1:0, p2:0, p3:0, p4:0, p5:0 };
   var views = {
     home: document.getElementById('view-home'),
-    p0: document.getElementById('view-p0'),
     p1: document.getElementById('view-p1'),
     p2: document.getElementById('view-p2'),
-    p3: document.getElementById('view-p3')
+    p3: document.getElementById('view-p3'),
+    p4: document.getElementById('view-p4'),
+    p5: document.getElementById('view-p5')
   };
   var deckbar = document.getElementById('deckbar');
   var fill = document.getElementById('progressFill');
@@ -1829,7 +2151,7 @@ svg text{font-family:inherit}
   function goHash(hash){
     hash = (hash||'#home').replace('#','');
     if(hash==='home'||hash===''){ state.view='home'; render(); return; }
-    var m = hash.match(/^(p0|p1|p2|p3)-(\d+)$/);
+    var m = hash.match(/^(p1|p2|p3|p4|p5)-(\d+)$/);
     if(m){
       var v=m[1], i=parseInt(m[2],10)-1;
       if(parts[v] && parts[v][i]){ state.view=v; state.idx=i; render(); return; }
@@ -1845,7 +2167,7 @@ svg text{font-family:inherit}
 
   function move(d){
     if(state.view==='home'){
-      if(d>0){ state.view='p0'; state.idx=0; render(); setHash(); }
+      if(d>0){ state.view='p1'; state.idx=0; render(); setHash(); }
       return;
     }
     var slides = parts[state.view];
